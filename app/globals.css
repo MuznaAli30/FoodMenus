@@ -110,6 +110,67 @@ body {
     z-index: -1; /* Make sure it's behind the content */
   }
 
+  .bg-fixed-pic6 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu1BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+
+
+  .bg-fixed-pic7 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu2BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
+
+
+  .bg-fixed-pic8 {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    @apply bg-fixed bg-cover bg-center;
+    background-image: url('/Assets/Images/Menu3BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-fixed-pic8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Black shade with 50% opacity */
+    z-index: -1; /* Make sure it's behind the content */
+  }
+
 
 
   
