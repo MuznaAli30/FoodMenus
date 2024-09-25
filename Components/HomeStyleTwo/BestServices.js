@@ -2,12 +2,14 @@ import React from "react";
 import Reserve2 from "./Reserve2";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
+import Image from "next/image";
+import BestServices2 from '../../public/Assets/Images/BestServices2.webp'
 
 export default function BestServices() {
   return (
     <>
-      <div className="flex flex-row justify-center items-center mb-56 mt-56">
-        <div className="bg-white flex flex-col  items-center justify-center w-[35%] h-[84vh]">
+      <div className="flex flex-row justify-center max-lg:flex-col items-center mb-56 mt-56">
+        <div className="bg-white flex flex-col  items-center justify-center max-lg:w-[90%] w-[35%] h-[84vh]">
           <div className="flex text-[#DAA760] flex-row items-center justify-center  m-auto">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl ">THE SERVICES</div>
@@ -16,7 +18,7 @@ export default function BestServices() {
           <div className="text-6xl font-bold items-center justify-center text-center m-auto -mt-14">
             Best Services
           </div>
-          <div className="w-96 text-center text-black font-light m-auto -mt-14">
+          <div className="w-96 text-center text-black font-light m-auto -mt-14 max-lg:mt-5">
             <p className="mb-10">
             Lorem ipsum dolor siit amet, consectetuer adipiscing eu. Aenean
             quesi comodo liigula egett dolor. Aenean massa. Sociis natoq
@@ -49,7 +51,7 @@ export default function BestServices() {
               </div>
           </div>
         </div>
-        <img src="/Assets/Images/BestServices2.webp"></img>
+        <Image src={BestServices2}/>
       </div>
 
       <Reserve2 />

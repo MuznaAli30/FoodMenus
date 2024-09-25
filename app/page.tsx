@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroPart from '../Components/HomeStyleOne/HeroPart'
 import Content from '../Components/HomeStyleOne/Content'
 import TheStory from '../Components/HomeStyleOne/TheStory'

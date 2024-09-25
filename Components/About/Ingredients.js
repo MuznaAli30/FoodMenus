@@ -2,6 +2,9 @@ import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Content from '../HomeStyleOne/Content'
 import OurCommitmentOfAbout from '../About/OurCommitmentOfAbout'
+import Image from "next/image";
+import Signature from '../../public/Assets/Images/Signature.webp';
+import IngredientsPic from '../../public/Assets/Images/Ingredients.webp'
 
 export default function Ingredients() {
   return (
@@ -25,7 +28,7 @@ export default function Ingredients() {
           </div>
           <div>
             <div className="w-80">
-              <img src="/Assets/Images/Signature.webp" />
+              <Image src={Signature}/>
             </div>
             <div className="text-white font-medium text-2xl">
               Maynard Peters , CEO
@@ -49,7 +52,7 @@ export default function Ingredients() {
         </div>
 
         <div>
-          <img src="/Assets/Images/Ingredients.webp" className="w-full h-[90vh]"/>
+          <Image src={IngredientsPic} className="w-full h-[90vh]"/>
         </div>
       </div>
       <Content/>

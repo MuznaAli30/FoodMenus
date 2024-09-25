@@ -1,12 +1,16 @@
 import React from "react";
 import StayCloseWithUs from '../ReserveOne/StayCloseWithUs'
+import OurCommitment2 from '../../public/Assets/Images/OurCommitment2.webp'
+import OurCommitment1 from '../../public/Assets/Images/OurCommitment1.webp'
+import Image from "next/image";
+
 
 export default function OurCommitment() {
   return (
     <>
       <div className=" text-white flex flex-row items-center gap-24 justify-center my-44">
         <div className="w-[45%]">
-          <img src="/Assets/Images/OurCommitment1.webp" />
+          <Image src={OurCommitment1} />
           <div className="font-mono mt-5 text-[#cdbba2]">
             We provide valuable experiences that you will never forget with your
             friends or partner. Delicious food and refreshing drinks will make
@@ -27,7 +31,7 @@ export default function OurCommitment() {
               restaurant so that you come home feeling happy and satisfied
               because you have coming from our restaurant. Hopefully you will
               feel satisfaction from our restaurant services.</div>
-            <img src="/Assets/Images/OurCommitment2.webp" />
+            <Image src={OurCommitment2} />
 
             </div>
 

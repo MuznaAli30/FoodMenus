@@ -1,6 +1,9 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import OurChef from '../OurChefs/OurChef'
+import Image from "next/image";
+import BestServices2 from '../../public/Assets/Images/BestServices2.webp'
+import Signature from '../../public/Assets/Images/Signature.webp'
 
 export default function ChefOfTheDishes() {
   return (
@@ -24,7 +27,7 @@ export default function ChefOfTheDishes() {
           </div>
           <div>
             <div className="w-80">
-              <img src="/Assets/Images/Signature.webp" />
+              <Image src={Signature}/>
             </div>
             <div className="text-white font-medium text-2xl">
               Maynard Peters , CEO
@@ -48,7 +51,7 @@ export default function ChefOfTheDishes() {
         </div>
 
         <div>
-          <img src="/Assets/Images/BestServices2.webp" />
+          <Image src={BestServices2}/>
         </div>
       </div>
       <OurChef/>

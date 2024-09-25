@@ -1,39 +1,52 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import Reserve2 from "../../Components/HomeStyleTwo/Reserve2";
-import { MdOutlineCancelPresentation } from "react-icons/md"; // Import the icon
+import { MdOutlineCancelPresentation } from "react-icons/md";
+import Image from "next/image";
+import g1 from '../../public/Assets/Images/g1.webp';
+import g3 from '../../public/Assets/Images/g3.webp';
+import g4 from '../../public/Assets/Images/g4.webp';
+import g5 from '../../public/Assets/Images/g5.webp';
+import g6 from '../../public/Assets/Images/g6.webp';
+import g7 from '../../public/Assets/Images/g7.webp';
+import g8 from '../../public/Assets/Images/g8.webp';
+import g9 from '../../public/Assets/Images/g9.webp';
+import g10 from '../../public/Assets/Images/g10.webp';
+import g11 from '../../public/Assets/Images/g11.webp';
+import g12 from '../../public/Assets/Images/g12.webp';
+import g2 from '../../public/Assets/Images/g2.webp';
+
 
 export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("ALL"); // Track selected category
+  const [selectedimg, setSelectedimg] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("ALL"); 
 
-  // All images with their categories
-  const images = [
-    { src: "/Assets/Images/g1.webp", text: "CHEF COOKING", category: "THE RESTAURANT" },
-    { src: "/Assets/Images/g2.webp", text: "BEEF KEBAB", category: "FOOD" },
-    { src: "/Assets/Images/g3.webp", text: "A GLASS OF WINE", category: "DRINK" },
-    { src: "/Assets/Images/g4.webp", text: "INSIDE THE RESTAURANT", category: "THE RESTAURANT" },
-    { src: "/Assets/Images/g5.webp", text: "THE DESERT", category: "FOOD" },
-    { src: "/Assets/Images/g6.webp", text: "BAKED SHRIMP", category: "FOOD" },
-    { src: "/Assets/Images/g7.webp", text: "SHRIMP ON APICE", category: "FOOD" },
-    { src: "/Assets/Images/g8.webp", text: "COOKING STEAK", category: "THE RESTAURANT" },
-    { src: "/Assets/Images/g9.webp", text: "BEEF KEBAB", category: "FOOD" },
-    { src: "/Assets/Images/g10.webp", text: "RESTAURANT TABLE", category: "THE RESTAURANT" },
-    { src: "/Assets/Images/g11.webp", text: "INSIDE THE RESTAURANT", category: "THE RESTAURANT" },
-    { src: "/Assets/Images/g12.webp", text: "WINE WITH CHERRY", category: "DRINK" },
+  // All imgs with their categories
+  const imgs = [
+    { src: g1, text: "CHEF COOKING", category: "THE RESTAURANT" },
+    { src: g2, text: "BEEF KEBAB", category: "FOOD" },
+    { src: g3, text: "A GLASS OF WINE", category: "DRINK" },
+    { src: g4, text: "INSIDE THE RESTAURANT", category: "THE RESTAURANT" },
+    { src: g5, text: "THE DESERT", category: "FOOD" },
+    { src: g6, text: "BAKED SHRIMP", category: "FOOD" },
+    { src: g7, text: "SHRIMP ON APICE", category: "FOOD" },
+    { src: g8, text: "COOKING STEAK", category: "THE RESTAURANT" },
+    { src: g9, text: "BEEF KEBAB", category: "FOOD" },
+    { src: g10, text: "RESTAURANT TABLE", category: "THE RESTAURANT" },
+    { src: g11, text: "INSIDE THE RESTAURANT", category: "THE RESTAURANT" },
+    { src: g12, text: "WINE WITH CHERRY", category: "DRINK" },
   ];
 
-  const openImagePreview = (imageSrc) => {
-    setSelectedImage(imageSrc);
+  const openimgPreview = (imgSrc) => {
+    setSelectedimg(imgSrc);
   };
 
-  const closeImagePreview = () => {
-    setSelectedImage(null);
+  const closeimgPreview = () => {
+    setSelectedimg(null);
   };
 
-  // Filter images based on the selected category
-  const filteredImages = selectedCategory === "ALL" ? images : images.filter(img => img.category === selectedCategory);
+  // Filter imgs based on the selected category
+  const filteredimgs = selectedCategory === "ALL" ? imgs : imgs.filter(img => img.category === selectedCategory);
 
   return (
     <>
@@ -55,14 +68,14 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Image Gallery */}
+        {/* img Gallery */}
         <div className="text-white grid grid-cols-4 grid-rows-3 md:grid-cols-3 gap-10 w-[70%]">
-          {filteredImages.map((item, index) => (
-            <div key={index} className="relative group" onClick={() => openImagePreview(item.src)}>
-              <img
+          {filteredimgs.map((item, index) => (
+            <div key={index} className="relative group" onClick={() => openimgPreview(item.src)}>
+              <Image
                 className="cursor-pointer hover:opacity-40 duration-700 w-full"
                 src={item.src}
-                alt={`Gallery Image ${index + 1}`}
+                alt={`Gallery img ${index + 1}`}
               />
               <div className="absolute inset-0 flex cursor-pointer items-center justify-center opacity-0 group-hover:opacity-100 duration-700 bg-black bg-opacity-50">
                 <p className="text-[#DAA760] text-xl font-medium">{item.text}</p>
@@ -72,22 +85,22 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* Image Preview Modal */}
-      {selectedImage && (
+      {/* img Preview Modal */}
+      {selectedimg && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
-          onClick={closeImagePreview}
+          onClick={closeimgPreview}
         >
           <div className="relative">
-            <img
+            <Image
               className="max-w-full max-h-screen cursor-pointer"
-              src={selectedImage}
+              src={selectedimg}
               alt="Preview"
             />
             <MdOutlineCancelPresentation
               className="absolute top-2 right-2 text-white bg-[#DAA760] p-2 rounded-full cursor-pointer"
               size={36}
-              onClick={closeImagePreview}
+              onClick={closeimgPreview}
             />
           </div>
         </div>

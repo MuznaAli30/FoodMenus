@@ -1,10 +1,15 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
+import Image from "next/image";
+import OurMenus1 from '../../public/Assets/Images/OurMenus1.webp'
+import OurMenus2 from '../../public/Assets/Images/OurMenus2.webp'
+import OurMenus3 from '../../public/Assets/Images/OurMenus3.webp'
+
 
 export default function page() {
   return (
     <>
-      <div className="bg-black flex justify-around items-center flex-col">
+      <div className=" flex justify-around items-center flex-col max-lg:mt-44">
         <div className="flex relative top-10 flex-col max-lg:top-0 max-lg:m-5 ">
           <div className="flex text-[#DAA760] flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
@@ -19,8 +24,8 @@ export default function page() {
           </div>
           <div className="mb-40 max-lg:mb-0 flex flex-row mt-16 justify-around items-center gap-10 opacity-85 max-lg:flex-col">
             <div>
-              <img
-                src="/Assets/Images/OurMenus1.webp"
+              <Image
+                src={OurMenus1}
                 className="hover:scale-110 cursor-pointer duration-500 hover:opacity-65"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
@@ -31,8 +36,8 @@ export default function page() {
               </div>
             </div>
             <div>
-              <img
-                src="/Assets/Images/OurMenus2.webp"
+              <Image
+                src={OurMenus2}
                 className="hover:scale-110 cursor-pointer duration-500 hover:opacity-65"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
@@ -43,8 +48,8 @@ export default function page() {
               </div>
             </div>
             <div>
-              <img
-                src="/Assets/Images/OurMenus3.webp"
+              <Image
+                src={OurMenus3}
                 className="hover:scale-110 cursor-pointer duration-500 hover:opacity-65"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">

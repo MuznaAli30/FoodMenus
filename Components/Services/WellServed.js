@@ -2,13 +2,15 @@ import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
 import Counters from '../Services/Counters'
+import Services from '../../public/Assets/Images/Services.webp'
+import Image from "next/image";
 
 export default function WellServed() {
   return (
     <>
       <div className="flex flex-row items-center justify-center gap-16 my-32">
         <div className="text-white max-lg:top-8 m-5 max-lg:mb-16">
-          <img src="/Assets/Images/Services.webp" className="" />
+          <Image src={Services}/>
         </div>{" "}
         <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
           <div className="flex flex-row items-center justify-start">

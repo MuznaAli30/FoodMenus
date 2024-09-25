@@ -4,8 +4,13 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Reserve2 from "../HomeStyleTwo/Reserve2";
+import Image from "next/image";
+import Chef3 from '../../public/Assets/Images/Chef3.webp';
+import Chef2 from '../../public/Assets/Images/Chef2.webp';
+import Chef1 from '../../public/Assets/Images/Chef1.webp';
 
-export default function page() {
+
+export default function   page() {
   return (
     <>
       <div className="bg-black flex justify-center items-center flex-col">
@@ -29,8 +34,8 @@ export default function page() {
 
           <div className="mb-40 max-lg:mb-0 flex flex-row mt-16 justify-around items-center gap-10 opacity-85 max-lg:flex-col">
             <div>
-              <img
-                src="/Assets/Images/Chef1.webp"
+              <Image
+                src={Chef1}
                 className=" hover:opacity-85"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
@@ -39,9 +44,6 @@ export default function page() {
                 </div>
                 <div className="hover:text-[#DAA760] hover:scale-125 duration-500 cursor-pointer text-[#f7f0e6] my-2">
                   Assistant chef
-                </div>
-                <div className="hover:text-[#DAA760] hover:scale-125 duration-500 cursor-pointer text-[#f7f0e6] my-2">
-                  Chef
                 </div>
                 <div className="text-[#DAA760]  flex flex-row gap-4">
                   <div className="hover:text-[#f7f0e6] duration-500 cursor-pointer">
@@ -57,8 +59,9 @@ export default function page() {
               </div>
             </div>
             <div>
-              <img
-                src="/Assets/Images/Chef2.webp"
+              <Image
+
+                src={Chef2}
                 className=" hover:opacity-85"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
@@ -82,8 +85,8 @@ export default function page() {
               </div>
             </div>
             <div>
-              <img
-                src="/Assets/Images/Chef3.webp"
+              <Image
+                src={Chef3}
                 className="hover:opacity-85"
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
@@ -92,9 +95,6 @@ export default function page() {
                 </div>
                 <div className="hover:text-[#DAA760] hover:scale-125 duration-500 cursor-pointer text-[#f7f0e6] my-2">
                   Assistant chef
-                </div>
-                <div className="hover:text-[#DAA760] hover:scale-125 duration-500 cursor-pointer text-[#f7f0e6] my-2">
-                  Chef
                 </div>
                 <div className="text-[#DAA760]  flex flex-row gap-4">
                   <div className="hover:text-[#f7f0e6] duration-500 cursor-pointer">

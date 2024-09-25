@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from '../HeaderFooter/Footer'
 import { IoRemoveOutline } from "react-icons/io5";
 
 export default function page() {

@@ -2,6 +2,10 @@ import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
 import Reserve2 from "../HomeStyleTwo/Reserve2";
+import Image from "next/image";
+import FoodCat2 from '../../public/Assets/Images/FoodCat2.webp';
+import FoodCat1 from '../../public/Assets/Images/FoodCat1.webp';
+
 
 export default function page() {
   return (
@@ -52,10 +56,10 @@ export default function page() {
           </div>
         </div>
         <div className="flex relative left-[15%]">
-          <img src="/Assets/Images/FoodCat1.webp" className="h-[65vh]" />
-          <img
+          <Image src={FoodCat1} className="h-[65vh]" />
+          <Image
             className="w-[50%] h-[80%] absolute bottom-[10%] right-[70%]  max-lg:w-full max-lg:right-[0%]"
-            src="/Assets/Images/FoodCat2.webp"
+            src={FoodCat2}
           />
         </div>
       </div>

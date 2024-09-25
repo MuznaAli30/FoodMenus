@@ -1,5 +1,11 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
+import Image from "next/image";
+import  SpecialMenu1 from '../../public/Assets/Images/SpecialMenu1.webp';
+import  SpecialMenu2 from '../../public/Assets/Images/SpecialMenu2.webp';
+import  SpecialMenu3 from '../../public/Assets/Images/SpecialMenu3.webp';
+
+
 
 export default function page() {
   return (
@@ -58,14 +64,14 @@ export default function page() {
         </div>
         <div className="flex flex-col justify-around items-center opacity-80">
         <div className="text-white relative top-80 max-lg:top-0 m-5">
-          <img src="/Assets/Images/SpecialMenu1.webp" />
+          <Image src={SpecialMenu1} />
         </div>
         <div className="flex flex-row">
         <div className="bg-black mb-[70%] max-lg:mb-[20%] text-white relative top-80 max-lg:top-0 m-5">
-          <img src="/Assets/Images/SpecialMenu2.webp" />
+          <Image src={SpecialMenu2}  />
         </div>
         <div className="text-white relative top-80 max-lg:top-0 m-5">
-          <img src="/Assets/Images/SpecialMenu3.webp" />
+          <Image src={SpecialMenu3}  />
         </div>
         </div>
         </div>

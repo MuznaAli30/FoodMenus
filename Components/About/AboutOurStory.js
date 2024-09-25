@@ -2,20 +2,24 @@ import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
 import Ingredients from '../About/Ingredients';
+import Image from "next/image";
+import AboutOurStory1 from '../../public/Assets/Images/AboutOurStory1.webp'
+import TheStory22 from '../../public/Assets/Images/TheStory22.webp'
+
 
 
 export default function page() {
   return (
     <>
       <div className="bg-black items-center justify-center flex relative flex-row ml-0 max-lg:flex-col max-lg:m-2 my-44">
-        <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16">
-          <img
-            src="/Assets/Images/AboutOurStory1.webp"
-            className="  h-[75vh]  max-lg:w-full"
+        <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16 h-[55vh] ">
+          <Image
+            src={AboutOurStory1}
+            className="w-[100%] h-[55vh] max-lg:w-full"
           />
-          <img
-            className="absolute h-[60vh] w-[40%] bottom-[5%] left-[75%]  max-lg:w-full max-lg:right-[0%]"
-            src="/Assets/Images/TheStory22.webp"
+          <Image
+            className="absolute h-full w-96 bottom-[5%] left-[75%]  max-lg:w-full max-lg:right-[0%]"
+            src={TheStory22}
           />
         </div>
         <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">

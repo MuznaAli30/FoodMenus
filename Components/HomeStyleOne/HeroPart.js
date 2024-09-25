@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Header from '../HeaderFooter/Header';
 import { FaPlayCircle } from "react-icons/fa";
+import hero11 from '../../public/Assets/Images/hero11.webp'
+import hero22 from '../../public/Assets/Images/hero22.webp'
+import hero33 from '../../public/Assets/Images/hero33.webp'
+
+
 
 export default function Page() {
   const [isVideoOpen, setIsVideoOpen] = useState(false); // State to track if the video modal is open
@@ -22,29 +27,29 @@ export default function Page() {
       </div>
       <div className="max-lg:flex max-lg:flex-row">
         <div className="relative bg-black">
-          <img
-            className="w-full h-[100vh] object-cover bg-black opacity-45"
-            src="/Assets/Images/hero33.webp"
+          <Image
+            className="w-full h-[100vh] object-cover bg-black  max-sm:w-[100%]"
+            src={hero33}
             alt="Background"
           />
           <div className="xl:absolute inset-0 flex items-center justify-around mt-[30%] max-xl:mt-[5%]">
-            <img
+            <Image
               className="object-contain w-[50%] max-lg:w-[50%] max-md:w-full max-sm:w-[70%]"
-              src="/Assets/Images/hero11.webp"
+              src={hero11}
               alt="404 not found"
             />
           </div>
           <div className="xl:absolute right-0 top-[45%] flex items-center justify-end max-lg:justify-center max-lg:items-center max-2xl:justify-end max-2xl:top-[45%]">
-            <img
+            <Image
               className="h-[70vh]"
-              src="/Assets/Images/hero22.webp"
-              alt="Hero Image"
+              src={hero22}
+              alt="Hero img"
             />
           </div>
         </div>
         <div className="absolute inset-0 flex items-center justify-around max-lg:flex-col max-lg:mt-10">
           <div className="">
-            <div className="text-8xl font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
+            <div className="text-8xl font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5 max-sm:text-5xl">
               We Only Serve <br />A{" "}
               <span className="hover:text-black duration-1000 text-[#c8934d]">
                 Delicious

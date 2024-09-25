@@ -1,6 +1,9 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import MainDish from '../Menu2/MainDish'
+import Menu2Appetizer1 from '../../public/Assets/Images/Menu2Appetizer1.webp';
+import Menu2Appetizer2 from '../../public/Assets/Images/Menu2Appetizer2.webp'
+import Image from "next/image";
 
 export default function Appetizer() {
   return (
@@ -70,11 +73,11 @@ export default function Appetizer() {
             <div className="text-[#DAA760]">Shrimp / Cheese / Tomato</div>{" "}
         </div>
         <div className="flex top-[250%] left-[47%] absolute justify-end">
-          <img src="/Assets/Images/Menu2Appetizer2.webp" />
+          <Image src={Menu2Appetizer2} />
         </div>
 
         <div>
-          <img src="/Assets/Images/Menu2Appetizer1.webp" />
+          <Image src={Menu2Appetizer1} />
         </div>
         
       </div>

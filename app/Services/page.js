@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../Components/HeaderFooter/Header";
 import WellServed from '../../Components/Services/WellServed'
+import Image  from "next/image";
+import ReserveHome from '../../public/Assets/Images/ReserveHome.webp'
 
 export default function Services() {
   return (
@@ -10,9 +12,9 @@ export default function Services() {
           <Header />
         </div>
         <div className="relative bg-black">
-          <img
+          <Image
             className="w-full h-[70vh] object-cover bg-black opacity-45"
-            src="/Assets/Images/ReserveHome.webp"
+            src={ReserveHome}
             alt="Background"
           />
         </div>

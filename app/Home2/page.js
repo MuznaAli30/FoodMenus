@@ -3,14 +3,13 @@ import React, { useState, useEffect } from "react";
 import Header from '../../Components/HeaderFooter/Header'
 import { FaPhone } from "react-icons/fa6";
 import TheStory from '../../Components/HomeStyleTwo/TheStory'
-import SpecialMenu from '../../Components/HomeStyleTwo/SpecialMenu'
 
 
 export default function Page() {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentimg, setCurrentimg] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
 
-  const images = [
+  const imgs = [
     "/Assets/Images/hero1.webp",
     "/Assets/Images/hero2.webp",
     "/Assets/Images/hero3.webp",
@@ -20,17 +19,17 @@ export default function Page() {
     const interval = setInterval(() => {
       setFadeIn(false);
       setTimeout(() => {
-        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        setCurrentimg((previmg) => (previmg + 1) % imgs.length);
         setFadeIn(true);
       }, 450); // Duration of the fade-out effect
     }, 3500); // Total duration including fade effect
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [imgs.length]);
 
-  return (
+  return ( 
     <div className="relative w-full h-[94vh]">
-      Image as background
+      img as background
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${
           fadeIn ? "opacity-100" : "opacity-0"
@@ -38,8 +37,8 @@ export default function Page() {
       >
         <img
           className="object-cover w-full h-[96vh]"
-          src={images[currentImage]}
-          alt={`hero${currentImage + 1}`}
+          src={imgs[currentimg]}
+          alt={`hero${currentimg + 1}`}
           layout="fill"
         />
         <div className="absolute inset-0 bg-black opacity-45"></div>
@@ -49,7 +48,7 @@ export default function Page() {
       </div>
       <div className="absolute inset-0 flex items-center justify-evenly max-lg:flex-col max-lg:mt-10 ">
         <div className="">
-          <div className="text-8xl font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
+          <div className="text-8xl max-lg:text-7xl font-semibold text-[#eddcdc] max-sm:text-5xl mb-10 font-sans max-lg:m-5">
             We Only Serve A <br />
             Delicious Dishes
           </div>
@@ -58,7 +57,7 @@ export default function Page() {
             seat in our restaurant and satisfy your self with quality food.
           </div>
           
-            <div className="flex flex-row  items-center ">
+            <div className="flex flex-row  items-center max-md:flex-col ">
               <button className="bg-[#DAA760] max-lg:m-5  mt-5 text-black w-56 p-4 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
                 MAKE A RESRVATION
               </button>
@@ -69,7 +68,6 @@ export default function Page() {
         </div>
       </div>
       <TheStory/>
-      {/* <SpecialMenu/> */}
     </div>
   );
 }
