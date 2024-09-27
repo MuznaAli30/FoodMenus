@@ -1,9 +1,8 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
-import OurCommitment from '../ReserveOne/OurCommitment'
+import OurCommitment from "../ReserveOne/OurCommitment";
 import Image from "next/image";
-import FormOnePic from '../../public/Assets/Images/FormOne.webp'
-
+import FormOnePic from "../../public/Assets/Images/FormOne.webp";
 
 export default function FormOne() {
   return (
@@ -116,7 +115,7 @@ export default function FormOne() {
           <Image src={FormOnePic} alt="Form Visual" />
         </div>
       </div>
-      <OurCommitment/>
+      <OurCommitment />
     </>
   );
 }

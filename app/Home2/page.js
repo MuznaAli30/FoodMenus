@@ -28,7 +28,7 @@ export default function Page() {
   }, [imgs.length]);
 
   return ( 
-    <div className="relative w-full h-[94vh]">
+    <div className=" w-full">
       img as background
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -52,7 +52,7 @@ export default function Page() {
             We Only Serve A <br />
             Delicious Dishes
           </div>
-          <div className="text-[#cdbba2] text-xl w-[60%]">
+          <div className="text-[#cdbba2] text-xl w-[90%] max-lg:m-5">
             The only thing we’re serious about is food. We will wait for your
             seat in our restaurant and satisfy your self with quality food.
           </div>

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Reserve1 from "../HomeStyleOne/Reserve1";
@@ -5,17 +6,33 @@ import Footer from "../HeaderFooter/Footer";
 import Menu2MainDish2 from '../../public/Assets/Images/Menu2MainDish2.webp'
 import Menu2MainDish1 from '../../public/Assets/Images/Menu2MainDish1.webp'
 import Image from "next/image";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 
 export default function MainDish() {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
   return (
     <>
       <div className="flex flex-row items-center justify-around  my-32">
-        <div>
-          <Image src={Menu2MainDish1} />
-        </div>
-        <div className="flex top-[365%] left-[20%] absolute ">
-          <Image src={Menu2MainDish2}/>
+      <div className="relative">
+          <Image
+            src={Menu2MainDish2}
+            className="absolute top-96 left-60 z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <Image
+            src={Menu2MainDish1}
+            className="w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
         </div>
         <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
           <div className="flex flex-row items-center justify-start">

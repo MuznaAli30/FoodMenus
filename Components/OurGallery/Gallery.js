@@ -3,23 +3,28 @@ import React, { useState } from "react";
 import Reserve2 from "../../Components/HomeStyleTwo/Reserve2";
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import Image from "next/image";
-import g1 from '../../public/Assets/Images/g1.webp';
-import g3 from '../../public/Assets/Images/g3.webp';
-import g4 from '../../public/Assets/Images/g4.webp';
-import g5 from '../../public/Assets/Images/g5.webp';
-import g6 from '../../public/Assets/Images/g6.webp';
-import g7 from '../../public/Assets/Images/g7.webp';
-import g8 from '../../public/Assets/Images/g8.webp';
-import g9 from '../../public/Assets/Images/g9.webp';
-import g10 from '../../public/Assets/Images/g10.webp';
-import g11 from '../../public/Assets/Images/g11.webp';
-import g12 from '../../public/Assets/Images/g12.webp';
-import g2 from '../../public/Assets/Images/g2.webp';
-
+import g1 from "../../public/Assets/Images/g1.webp";
+import g3 from "../../public/Assets/Images/g3.webp";
+import g4 from "../../public/Assets/Images/g4.webp";
+import g5 from "../../public/Assets/Images/g5.webp";
+import g6 from "../../public/Assets/Images/g6.webp";
+import g7 from "../../public/Assets/Images/g7.webp";
+import g8 from "../../public/Assets/Images/g8.webp";
+import g9 from "../../public/Assets/Images/g9.webp";
+import g10 from "../../public/Assets/Images/g10.webp";
+import g11 from "../../public/Assets/Images/g11.webp";
+import g12 from "../../public/Assets/Images/g12.webp";
+import g2 from "../../public/Assets/Images/g2.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Gallery() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [selectedimg, setSelectedimg] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("ALL"); 
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
 
   // All imgs with their categories
   const imgs = [
@@ -46,13 +51,16 @@ export default function Gallery() {
   };
 
   // Filter imgs based on the selected category
-  const filteredimgs = selectedCategory === "ALL" ? imgs : imgs.filter(img => img.category === selectedCategory);
+  const filteredimgs =
+    selectedCategory === "ALL"
+      ? imgs
+      : imgs.filter((img) => img.category === selectedCategory);
 
   return (
     <>
       <div className="flex items-center justify-center flex-col my-32">
         {/* Navigation Links */}
-        <div className="text-white flex flex-row items-center justify-around mb-16 z-30 gap-10">
+        <div className="text-white flex  flex-row items-center justify-around mb-16 z-30 gap-10">
           {["ALL", "FOOD", "THE RESTAURANT", "DRINK"].map((category) => (
             <button
               key={category}
@@ -69,16 +77,24 @@ export default function Gallery() {
         </div>
 
         {/* img Gallery */}
-        <div className="text-white grid grid-cols-4 grid-rows-3 md:grid-cols-3 gap-10 w-[70%]">
+        <div className="text-white grid grid-cols-4 max-lg:flex max-lg:flex-col grid-rows-3 md:grid-cols-3 gap-10 w-[70%]">
           {filteredimgs.map((item, index) => (
-            <div key={index} className="relative group" onClick={() => openimgPreview(item.src)}>
+            <div
+              key={index}
+              className="relative group"
+              onClick={() => openimgPreview(item.src)}
+            >
               <Image
-                className="cursor-pointer hover:opacity-40 duration-700 w-full"
+                className="cursor-pointer hover:opacity-40 duration-700 w-full "
                 src={item.src}
                 alt={`Gallery img ${index + 1}`}
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
               />
               <div className="absolute inset-0 flex cursor-pointer items-center justify-center opacity-0 group-hover:opacity-100 duration-700 bg-black bg-opacity-50">
-                <p className="text-[#DAA760] text-xl font-medium">{item.text}</p>
+                <p className="text-[#DAA760] text-xl font-medium">
+                  {item.text}
+                </p>
               </div>
             </div>
           ))}
@@ -95,6 +111,8 @@ export default function Gallery() {
             <Image
               className="max-w-full max-h-screen cursor-pointer"
               src={selectedimg}
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
               alt="Preview"
             />
             <MdOutlineCancelPresentation

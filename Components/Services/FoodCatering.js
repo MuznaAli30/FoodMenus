@@ -10,10 +10,10 @@ import FoodCat1 from '../../public/Assets/Images/FoodCat1.webp';
 export default function page() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center w-full  my-44">
+      <div className="flex flex-row max-lg:flex-col items-center justify-evenly w-full max-lg:w-[90%]  my-44">
         <div>
-          <div className="text-[#DAA760] flex flex-col justify-start max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
-            <div className="flex flex-row items-center justify-start">
+          <div className="text-[#DAA760] max-lg:w-[90%] flex flex-col justify-start max-lg:mt-0 max-lg:text-justify">
+            <div className="flex flex-row  items-center justify-start ">
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl">CELEBRATION</div>
             </div>
@@ -21,7 +21,7 @@ export default function page() {
               Food Catering
             </div>
             <div className="text-cyan-50 flex justify-start">
-              <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
+              <p className="w-96 max-lg:w-[90%] text-[#cdbba2] mt-5 mb-5">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing qeun elit.
                 Aenean que commodo ligula eget dolor. Aenean massa. Cumm sociis
                 natoque penatibus qet magnis diis parturient montes, nascetur
@@ -55,11 +55,18 @@ export default function page() {
             </button>
           </div>
         </div>
-        <div className="flex relative left-[15%]">
-          <Image src={FoodCat1} className="h-[65vh]" />
+        <div className="relative">
           <Image
-            className="w-[50%] h-[80%] absolute bottom-[10%] right-[70%]  max-lg:w-full max-lg:right-[0%]"
+            src={FoodCat1}
+            className="absolute top-36 right-60 z-10 max-lg:right-0 w-full max-lg:top-56"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <Image
             src={FoodCat2}
+            className="w-full h-[60vh]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           />
         </div>
       </div>

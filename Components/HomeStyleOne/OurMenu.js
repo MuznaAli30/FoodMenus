@@ -1,16 +1,15 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Image from "next/image";
-import OurMenus1 from '../../public/Assets/Images/OurMenus1.webp'
-import OurMenus2 from '../../public/Assets/Images/OurMenus2.webp'
-import OurMenus3 from '../../public/Assets/Images/OurMenus3.webp'
-
+import OurMenus1 from "../../public/Assets/Images/OurMenus1.webp";
+import OurMenus2 from "../../public/Assets/Images/OurMenus2.webp";
+import OurMenus3 from "../../public/Assets/Images/OurMenus3.webp";
 
 export default function page() {
   return (
     <>
-      <div className=" flex justify-around items-center flex-col max-lg:mt-44">
-        <div className="flex relative top-10 flex-col max-lg:top-0 max-lg:m-5 ">
+      <div className=" flex justify-around items-center flex-col">
+        <div className="flex  flex-col max-lg:top-0 max-lg:m-5 ">
           <div className="flex text-[#DAA760] flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl ">MENUS</div>
@@ -42,7 +41,7 @@ export default function page() {
               />
               <div className="flex flex-col m-10 items-center justify-around text-center">
                 <div className="text-[#DAA760] text-xl font-semibold hover:text-[#f7f0e6] hover:scale-125 duration-500 cursor-pointer">
-                MAIN DISH
+                  MAIN DISH
                 </div>
                 <div className="text-[#f7f0e6]">Steaks / Grills / Pasta</div>
               </div>

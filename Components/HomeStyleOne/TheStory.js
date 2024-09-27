@@ -18,15 +18,20 @@ export default function TheStory() {
     <>
       <div className="bg-black items-center justify-center flex relative flex-row ml-0 max-lg:flex-col max-lg:m-2">
         <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16">
+        <div className="relative">
+          <Image
+            src={ourStory2}
+            className="absolute top-36 left-96 z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <div>
           <Image
             src={ourStory1}
-            className="max-sm:hidden h-[75vh] max-lg:w-full w-full"
+            className="w-full h-[70vh] "
           />
-          <Image
-            className="absolute duration-700 max-sm:relative bottom-[15%] left-[70%] max-sm:left-96 max-lg:w-full max-lg:right-[0%] max-sm:flex max-sm:w-[100%] max-sm:items-center max-sm:justify-center"
-            src={ourStory2}
-            data-aos="fade-up"
-          />
+          </div>
+        </div>
         </div>
         <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
           <div className="flex flex-row items-center justify-start">

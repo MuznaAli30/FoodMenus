@@ -43,38 +43,44 @@ export default function Header() {
   const items = [
     {
       name: "HOME",
-      href: "#",
+      href: "/",
       key: "home",
       dropdownItems: [
         { name: "Home-Style-1", href: "/" },
-        { name: "Home-Style-2", href: "/Home2" },
+        { name: "Home-Style-2", href: "/Home2" }, // Updated link
       ],
     },
-    { name: "ABOUT US", href: "#", key: "about", dropdownItems: [] },
+    {
+      name: "ABOUT US",
+      href: "/About", // Updated link
+      key: "about",
+      dropdownItems: [],
+    },
     {
       name: "MENUS",
-      href: "#",
+      href: "/menus", // Updated link
       key: "menus",
       dropdownItems: [
-        { name: "Menu-Style-1", href: "#" },
-        { name: "Menu-Style-2", href: "#" },
+        { name: "Menu-Style-1", href: "/Menu1" }, // Updated link
+        { name: "Menu-Style-2", href: "/Menu2" }, // Updated link
       ],
     },
     {
       name: "PAGES",
-      href: "#",
+      href: "/pages", // Updated link
       key: "pages",
       dropdownItems: [
-        { name: "Contact Us", href: "#" },
-        { name: "Reservation-Style 1", href: "/ReserveOne" },
-        { name: "Reservation-Style 2", href: "#" },
-        { name: "Our Chef", href: "#" },
-        { name: "Gallery", href: "#" },
-        { name: "Services", href: "#" },
-        { name: "404 Page", href: "/PageNotFound" },
+        { name: "Contact Us", href: "/ContactUs" }, // Updated link
+        { name: "Reservation-Style 1", href: "/ReserveOne" }, // Updated link
+        { name: "Reservation-Style 2", href: "/ReserveTwo" }, // Updated link
+        { name: "Our Chef", href: "/OurChefs" }, // Updated link
+        { name: "Gallery", href: "OurGallery"},
+        { name: "Services", href: "Services" }, // Updated link
+        { name: "404 Page", href: "PageNotFound" }, // Updated link
       ],
     },
   ];
+  
 
   return (
     <>
@@ -196,6 +202,7 @@ export default function Header() {
                 <Link href="/OurChefs" className="px-4 py-2 hover:text-[#c8934d] block ">
                   Our Chef
                 </Link>
+                
                 <Link href="/OurGallery" className="px-4 py-2 hover:text-[#c8934d] block ">
                   Gallery
                 </Link>

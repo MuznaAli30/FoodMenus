@@ -8,8 +8,8 @@ import Signature from '../../public/Assets/Images/Signature.webp'
 export default function ChefOfTheDishes() {
   return (
     <>
-      <div className="flex flex-row items-center justify-evenly mt-44">
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+      <div className="flex flex-row max-lg:flex-col items-center justify-evenly mt-44">
+        <div className="text-[#DAA760] flex flex-col justify-start  max-lg:w-[90%] mt-16 max-lg:mt-0 max-lg:text-justify">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">BEST QUALITY</div>
@@ -26,7 +26,7 @@ export default function ChefOfTheDishes() {
             </p>
           </div>
           <div>
-            <div className="w-80">
+            <div className="w-80 ">
               <Image src={Signature}/>
             </div>
             <div className="text-white font-medium text-2xl">
@@ -37,11 +37,12 @@ export default function ChefOfTheDishes() {
             </button>
           </div>
         </div>
-        <div className=" bg-white flex top-[130%] absolute justify-end">
+        <div className="relative  mt-5">
+        <div className=" bg-white flex top-36 absolute max-lg:-right-48 z-10 ">
         <div className="flex flex-col">
             <div className="flex flex-row ">
             <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1"></div>
-          <div className="w-80 font-serif m-8 ml-0  text-gray-800">
+          <div className="w-80 font-serif m-8 ml-0 max-lg-w-56  text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </div>
@@ -49,9 +50,11 @@ export default function ChefOfTheDishes() {
           <div className="m-8 mt-0">Maynard P .</div>
         </div>
         </div>
+        </div>
+
 
         <div>
-          <Image src={BestServices2}/>
+          <Image src={BestServices2} className="max-lg:w-full"/>
         </div>
       </div>
       <OurChef/>

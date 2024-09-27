@@ -5,7 +5,7 @@ import Footer from '../HeaderFooter/Footer'
 export default function StayCloseWithUs() {
   return (
     <>
-      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-[110%]  ">
+      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-full ">
         <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
           <div className="flex relative flex-col max-lg:mt-20 mt-24 ">
             <div className="flex text-[#DAA760] flex-row items-center justify-center ">
@@ -13,7 +13,7 @@ export default function StayCloseWithUs() {
               <div className="text-xl ">ANY QUSTION ?</div>
               <IoRemoveOutline className="text-7xl font-extrabold" />
             </div>
-            <div className="text-white text-8xl font-bold font-sans mb-7 flex items-center justify-start">
+            <div className="text-white text-8xl max-lg:text-5xl font-bold font-sans mb-7 flex items-center justify-start">
               Stay Close With Us
             </div>
             

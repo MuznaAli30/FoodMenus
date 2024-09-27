@@ -9,8 +9,8 @@ import IngredientsPic from '../../public/Assets/Images/Ingredients.webp'
 export default function Ingredients() {
   return (
     <>
-      <div className="flex flex-row items-center justify-evenly mb-44">
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+      <div className="flex flex-row items-center justify-evenly mb-44 max-lg:flex-col">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[90%]">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
@@ -19,7 +19,7 @@ export default function Ingredients() {
           The Ingredients
           </div>
           <div className="text-cyan-50 flex justify-start">
-            <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
+            <p className="w-96 max-lg:w-[90%] text-[#cdbba2]  mt-5 mb-5">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               quem commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               et mus penatibus et magnis dis parturient montes, nascetur
@@ -38,7 +38,8 @@ export default function Ingredients() {
             </button>
           </div>
         </div>
-        <div className=" bg-white flex -bottom-[168%] absolute justify-end">
+        <div className="relative">
+        <div className=" bg-white flex top-48 absolute z-10">
         <div className="flex flex-col">
             <div className="flex flex-row ">
             <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1"></div>
@@ -48,6 +49,7 @@ export default function Ingredients() {
           </div>
           </div>
           <div className="m-8 mt-0">Maynard P .</div>
+        </div>
         </div>
         </div>
 

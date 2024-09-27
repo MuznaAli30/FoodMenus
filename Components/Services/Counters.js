@@ -10,7 +10,7 @@ import FoodCatering from '../Services/FoodCatering'
 export default function Counters() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center w-full gap-16 mb-44">
+      <div className="flex flex-row max-lg:flex-col items-center justify-center w-full gap-16 mb-44">
         <div className="flex items-center">
           <GiForkKnifeSpoon className="text-[#DAA760] text-8xl mr-5" />
           <div>

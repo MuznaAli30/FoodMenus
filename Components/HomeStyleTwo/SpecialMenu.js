@@ -6,7 +6,7 @@ export default function SpecialMenu() {
   return (
     <>
       <div>
-        <div className="bg-fixed-pic4 h-[100vh] opacity-95 w-full max-lg:w-[110%] max-lg:mb-auto max-lg:mt-10">
+        <div className="bg-fixed-pic4 h-[100vh] opacity-95 w-full max-lg:w-[110%] max-lg:mb-auto   max-lg:mt-10">
           <div className="flex items-center justify-center m-auto h-full">
             {" "}
             <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">

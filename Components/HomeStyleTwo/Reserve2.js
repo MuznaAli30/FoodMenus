@@ -5,7 +5,7 @@ import Footer from '../HeaderFooter/Footer'
 export default function Reserve2() {
   return (
     <>
-      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-[120%] max-sm:w-[120%] ">
+      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-full">
         <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
           <div className="flex relative flex-col max-lg:mt-20 mt-24 ">
             <div className="flex text-[#DAA760] flex-row items-center justify-center ">

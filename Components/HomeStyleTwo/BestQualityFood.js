@@ -6,7 +6,7 @@ import BestServices from './BestServices'
 export default function BestQualityFood() {
   return (
     <>
-      <div className="bg-fixed-pic5 h-[55vh] opacity-95 w-full max-lg:w-[110%]">
+      <div className="bg-fixed-pic5 h-[55vh] opacity-95 w-full max-lg:w-full">
         <div className="flex flex-col justify-center items-center h-full font-serif">
           <p className="text-white font-extrabold text-8xl max-sm:text-5xl">
             Best Quality Foods

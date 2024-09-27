@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function OurCommitment() {
   return (
     <>
-      <div className=" text-white flex flex-row items-center gap-24 justify-center my-44">
+      <div className=" text-white flex flex-row max-lg:flex-col items-center gap-24 justify-center my-44">
         <div className="w-[45%]">
           <Image src={OurCommitment1} />
           <div className="font-mono mt-5 text-[#cdbba2]">

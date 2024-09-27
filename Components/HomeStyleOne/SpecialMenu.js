@@ -1,13 +1,22 @@
+"use client"
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Image from "next/image";
 import  SpecialMenu1 from '../../public/Assets/Images/SpecialMenu1.webp';
 import  SpecialMenu2 from '../../public/Assets/Images/SpecialMenu2.webp';
 import  SpecialMenu3 from '../../public/Assets/Images/SpecialMenu3.webp';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 export default function page() {
+
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
+
   return (
     <>
       <div className="bg-black flex items-center justify-evenly flex-row max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
@@ -64,14 +73,20 @@ export default function page() {
         </div>
         <div className="flex flex-col justify-around items-center opacity-80">
         <div className="text-white relative top-80 max-lg:top-0 m-5">
-          <Image src={SpecialMenu1} />
+          <Image src={SpecialMenu1} 
+          data-aos="fade-left"
+          data-aos-duration="1000"/>
         </div>
         <div className="flex flex-row">
         <div className="bg-black mb-[70%] max-lg:mb-[20%] text-white relative top-80 max-lg:top-0 m-5">
-          <Image src={SpecialMenu2}  />
+          <Image src={SpecialMenu2} 
+          data-aos="fade-left"
+          data-aos-duration="1000" />
         </div>
         <div className="text-white relative top-80 max-lg:top-0 m-5">
-          <Image src={SpecialMenu3}  />
+          <Image src={SpecialMenu3}  
+          data-aos="fade-left"
+          data-aos-duration="1900"/>
         </div>
         </div>
         </div>

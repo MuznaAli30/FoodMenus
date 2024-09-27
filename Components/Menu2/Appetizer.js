@@ -1,11 +1,18 @@
+"use client";
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
-import MainDish from '../Menu2/MainDish'
-import Menu2Appetizer1 from '../../public/Assets/Images/Menu2Appetizer1.webp';
-import Menu2Appetizer2 from '../../public/Assets/Images/Menu2Appetizer2.webp'
+import MainDish from "../Menu2/MainDish";
+import Menu2Appetizer1 from "../../public/Assets/Images/Menu2Appetizer1.webp";
+import Menu2Appetizer2 from "../../public/Assets/Images/Menu2Appetizer2.webp";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Appetizer() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="flex flex-row items-center justify-around mt-44">
@@ -18,70 +25,68 @@ export default function Appetizer() {
             Appetizer
           </div>
           <div className="text-white flex flex-row justify-evenly mt-10 text-2xl">
-              <div>Citrus Cured Salmon​ With Honey </div>
-              <div className="text-[#DAA760]">
-                .............................................. 
-              </div>
-              <div> $25</div>
+            <div>Citrus Cured Salmon​ With Honey </div>
+            <div className="text-[#DAA760]">
+              ..............................................
             </div>
-            <div className="text-[#DAA760]">Salmon / Citrus / Honey / Spice.</div>
-            
-            <div className="text-white  flex flex-row justify-evenly mt-10 text-2xl">
-              <div>Pork Tenderloin Marinated In Yogurt</div>
-              <div className="text-[#DAA760]">
-                .........................................
-              </div>
-              <div>$25</div>
+            <div> $25</div>
+          </div>
+          <div className="text-[#DAA760]">Salmon / Citrus / Honey / Spice.</div>
+          <div className="text-white  flex flex-row justify-evenly mt-10 text-2xl">
+            <div>Pork Tenderloin Marinated In Yogurt</div>
+            <div className="text-[#DAA760]">
+              .........................................
             </div>
-           
-            <div className="text-[#DAA760]">Pork / Tenderloin / Yogurt</div>
-            <div className="flex text-white  flex-row justify-between  mt-10 text-2xl">
-              <div>Grilled Pork With Preserved Lemons</div>
-              <div className="text-[#DAA760]">
-                ...........................
-              </div>
-              <div>$27</div>
+            <div>$25</div>
+          </div>
+          <div className="text-[#DAA760]">Pork / Tenderloin / Yogurt</div>
+          <div className="flex text-white  flex-row justify-between  mt-10 text-2xl">
+            <div>Grilled Pork With Preserved Lemons</div>
+            <div className="text-[#DAA760]">...........................</div>
+            <div>$27</div>
+          </div>
+          <div className="text-[#DAA760]">Pork / Lemon / Onions</div>
+          <div className="flex text-white  flex-row justify-between mt-10 text-2xl">
+            <div>Roasted Prawns with Coriander</div>
+            <div className="text-[#DAA760]">
+              ...............................................
             </div>
-            
-            <div className="text-[#DAA760]">Pork / Lemon / Onions</div>
-            <div className="flex text-white  flex-row justify-between mt-10 text-2xl">
-              <div>Roasted Prawns with Coriander</div>
-              <div className="text-[#DAA760]">
-                ...............................................
-              </div>
-              <div>$18</div>
+            <div>$18</div>
+          </div>
+          <div className="text-[#DAA760]">Prawn / Coriander / Spices</div>{" "}
+          <div className="flex text-white flex-row justify-between mt-10 text-2xl">
+            <div>Prawn Sausage Cassaoulet</div>
+            <div className="text-[#DAA760]">
+              ..................................
             </div>
-            
-            <div className="text-[#DAA760]">Prawn / Coriander / Spices</div>{" "}
-            <div className="flex text-white flex-row justify-between mt-10 text-2xl">
-              <div>Prawn Sausage Cassaoulet</div>
-              <div className="text-[#DAA760]">
-                ..................................
-              </div>
-              <div>$25</div>
+            <div>$25</div>
+          </div>
+          <div className="text-[#DAA760]">Prawn / Sausage / Tomato</div>{" "}
+          <div className="flex text-white  flex-row justify-between mt-10 text-2xl">
+            <div>Shrimp Scampy</div>
+            <div className="text-[#DAA760]">
+              ........................................................
             </div>
-           
-            <div className="text-[#DAA760]">Prawn / Sausage / Tomato</div>{" "}
-            <div className="flex text-white  flex-row justify-between mt-10 text-2xl">
-              <div>Shrimp Scampy</div>
-              <div className="text-[#DAA760]">
-                ........................................................
-              </div>
-              <div>$12</div>
-            </div>
-
-            <div className="text-[#DAA760]">Shrimp / Cheese / Tomato</div>{" "}
+            <div>$12</div>
+          </div>
+          <div className="text-[#DAA760]">Shrimp / Cheese / Tomato</div>{" "}
         </div>
-        <div className="flex top-[250%] left-[47%] absolute justify-end">
-          <Image src={Menu2Appetizer2} />
+        <div className="relative">
+          <Image
+            src={Menu2Appetizer2}
+            className="absolute top-96 right-60 z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
+          <Image
+            src={Menu2Appetizer1}
+            className="w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
         </div>
-
-        <div>
-          <Image src={Menu2Appetizer1} />
-        </div>
-        
       </div>
-      <MainDish/>
+      <MainDish />
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function page() {
           alt="hero1"
         />
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="absolute inset-0 bg-black opacity-80"></div>
 
         {/* Header with the highest z-index */}
         <div className="relative z-[30]">

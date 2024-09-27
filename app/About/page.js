@@ -4,7 +4,9 @@ import AboutOurStory from '../../Components/About/AboutOurStory'
 import Image from "next/image";
 import ReserveHome from '../../public/Assets/Images/ReserveHome.webp'
 
+
 export default function Services() {
+
   return (
     <>
       <div>
@@ -20,7 +22,7 @@ export default function Services() {
         </div>
         <div className="absolute inset-0 flex items-center justify-around  max-lg:mt-10 ">
           <div className="">
-            <div className="text-8xl -mt-44 font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
+            <div className="text-8xl max-lg:text-5xl -mt-44 font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
               OUR STORY
             </div>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="bg-fixed-pic2 h-[55vh] opacity-95 w-full max-lg:w-[110%]">
+      <div className="bg-fixed-pic2 h-[55vh] opacity-95 w-full max-lg:w-full">
         <div className="flex items-center justify-around relative flex-col">
           <svg
             className="m-5 text-7xl text-[#DAA760]"

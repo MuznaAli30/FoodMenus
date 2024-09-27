@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
@@ -5,24 +6,37 @@ import Ingredients from '../About/Ingredients';
 import Image from "next/image";
 import AboutOurStory1 from '../../public/Assets/Images/AboutOurStory1.webp'
 import TheStory22 from '../../public/Assets/Images/TheStory22.webp'
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 
 
 export default function page() {
+  
+useEffect(() => {
+  AOS.init(); 
+}, []);
   return (
     <>
-      <div className="bg-black items-center justify-center flex relative flex-row ml-0 max-lg:flex-col max-lg:m-2 my-44">
+      <div className="bg-black items-center max-lg:flex-col justify-center flex relative flex-row ml-0 max-lg:w-[90%] my-44">
         <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16 h-[55vh] ">
+        <div className="relative">
+          <Image
+            src={TheStory22}
+            className="absolute top-36 left-96 w-96 h-[50vh] z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
           <Image
             src={AboutOurStory1}
-            className="w-[100%] h-[55vh] max-lg:w-full"
-          />
-          <Image
-            className="absolute h-full w-96 bottom-[5%] left-[75%]  max-lg:w-full max-lg:right-[0%]"
-            src={TheStory22}
+            className="w-full h-[50vh]"
           />
         </div>
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+        </div>
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[90%]">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
@@ -31,7 +45,7 @@ export default function page() {
             The Story
           </div>
           <div className="text-cyan-50 flex justify-start">
-            <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
+            <p className="w-96 max-lg:w-[90%] text-[#cdbba2] mt-5 mb-5">
               Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
               Aenean quis commodoo ligula eget dolor. Aeneanan massa. Cum socies
               natoque penatibus etapi magnis dis parturients montes, nascetur

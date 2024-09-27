@@ -8,11 +8,11 @@ import Image from "next/image";
 export default function WellServed() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center gap-16 my-32">
-        <div className="text-white max-lg:top-8 m-5 max-lg:mb-16">
+      <div className="flex flex-row max-lg:flex-col items-center justify-center gap-16 my-32">
+        <div className="text-white flex items-center justify-center max-lg:top-8 m-5 max-lg:mb-16 max-lg:w-[90%]">
           <Image src={Services}/>
         </div>{" "}
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+        <div className="text-[#DAA760] max-lg:w-[90%] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">DELVERY</div>

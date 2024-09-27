@@ -10,7 +10,7 @@ import Reserve2Contact from '../ContactUs/Reserve2Contact'
 export default function Form() {
   return (
     <>
-      <div className="text-white flex flex-row justify-evenly max-lg:flex-col items-center my-44">
+      <div className="text-white flex flex-rowjustify-evenly max-lg:flex-col items-center my-44 max-lg:w-[80%] max-lg:m-5">
         <div>
           <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
             <div className="flex flex-row items-center justify-start">
@@ -21,7 +21,7 @@ export default function Form() {
               Get in touch
             </div>
             <div className="text-cyan-50 flex justify-start">
-              <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
+              <p className="w-96 max-lg:w-[90%] text-[#cdbba2] mt-5 mb-5">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 que commodo ligula eget dolor. Aenean massa. Cum sociis nec
                 natoquers penatibus et magnis dis parturient montes, nascetur
@@ -29,10 +29,10 @@ export default function Form() {
                 eu, pretiumqu quis, sem. Nulla consequat massa quis enim.
               </p>
             </div>
-            <div className="flex flex-col mb-10">
+            <div className="flex flex-col mb-10 ">
                 
 
-              <div className="flex flex-row">
+              <div className="flex flex-row max-lg:flex-col">
                 <div class="flex items-center gap-5 m-2 cursor-pointer ">
                   <svg
                     className="text-[#d08829] text-4xl "
@@ -80,7 +80,7 @@ export default function Form() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-row max-lg:flex-col">
                 <div className="flex items-center gap-5 m-2 cursor-pointer">
                   <svg
                     className="text-[#d08829] text-4xl"
@@ -117,8 +117,8 @@ export default function Form() {
               </div>
             </div>
           </div>
-          <div className="text-white text-xl mb-5">FOLLOW US</div>
-          <div className="flex space-x-5 text-md ">
+          <div className="text-white text-xl mb-5 max-lg:m-5">FOLLOW US</div>
+          <div className="flex space-x-5 text-md max-lg:m-5">
             <FaFacebookF className="hover:text-[#c8934d] duration-500 cursor-pointer" />
             <IoLogoInstagram className="hover:text-[#c8934d] duration-500 cursor-pointer" />
             <TfiTwitter className="hover:text-[#c8934d] duration-500 cursor-pointer" />
