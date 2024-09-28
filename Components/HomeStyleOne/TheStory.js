@@ -21,14 +21,14 @@ export default function TheStory() {
         <div className="relative">
           <Image
             src={ourStory2}
-            className="absolute top-36 left-96 z-10"
+            className="absolute top-36 left-96 z-10 "
             data-aos="fade-up"
             data-aos-duration="1000"
           />
           <div>
           <Image
             src={ourStory1}
-            className="w-full h-[70vh] "
+            className="w-full h-[70vh] max-lg:flex max-lg:items-center max-lg:justify-center"
           />
           </div>
         </div>

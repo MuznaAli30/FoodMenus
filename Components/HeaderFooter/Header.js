@@ -248,7 +248,7 @@ export default function Header() {
         {/* Sidebar */}
         <div
           className={`bg-[#130F0C]  text-white fixed h-screen transition-all z-10 
-          ${isOpen ? "w-[45%] delay-1000" : "w-0 delay-1000 overflow-hidden"}`}
+          ${isOpen ? "w-[45%] max-sm:w-[75%] delay-1000" : "w-0 delay-1000 overflow-hidden"}`}
         >
           <div className="h-full flex flex-col">
             {/* Header */}

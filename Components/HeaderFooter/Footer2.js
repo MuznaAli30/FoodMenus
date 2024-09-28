@@ -8,7 +8,7 @@ export default function Footer2() {
         SOVY
       </div>
       <div className="flex justify-around items-center ">
-        <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center max-lg:justify-around ">
+        <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:flex-col">
           <div className="cursor-pointer hover:text-[#bec7cc] hover:duration-700">
             FACEBOOK
           </div>

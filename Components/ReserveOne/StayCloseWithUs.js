@@ -13,7 +13,7 @@ export default function StayCloseWithUs() {
               <div className="text-xl ">ANY QUSTION ?</div>
               <IoRemoveOutline className="text-7xl font-extrabold" />
             </div>
-            <div className="text-white text-8xl max-lg:text-5xl font-bold font-sans mb-7 flex items-center justify-start">
+            <div className="text-white text-8xl max-lg:text-4xl font-bold font-sans mb-7 flex items-center justify-start">
               Stay Close With Us
             </div>
             

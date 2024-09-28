@@ -10,7 +10,7 @@ import Reserve2Contact from '../ContactUs/Reserve2Contact'
 export default function Form() {
   return (
     <>
-      <div className="text-white flex flex-rowjustify-evenly max-lg:flex-col items-center my-44 max-lg:w-[80%] max-lg:m-5">
+      <div className="text-white flex flex-row justify-evenly max-lg:flex-col items-center my-44 max-lg:w-[80%] max-lg:m-5">
         <div>
           <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
             <div className="flex flex-row items-center justify-start">
@@ -125,11 +125,11 @@ export default function Form() {
             <FaTripadvisor className="hover:text-[#c8934d] duration-500 cursor-pointer" />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col max-lg:w-[90%]">
         <div className="text-white text-5xl font-medium">YOUR DETAIL</div>
         <div className="my-10 mt-3 text-[#cdbba2]">Let us know how to get back to you.</div>
-          <div className="flex flex-row items-center justify-center gap-5 ">
-            <div className="flex flex-col">
+          <div className="flex flex-row items-center justify-center gap-5 max-lg:flex-col">
+            <div className="flex flex-col ">
               <label className="text-white text-lg mb-3">
                 NAME <span className="text-[#DAA760]">*</span>
               </label>

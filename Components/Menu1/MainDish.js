@@ -6,8 +6,8 @@ import Desert from '../Menu1/Desert';
 export default function MainDish() {
   return (
     <>
-    <div className="text-white flex flex-col items-center justify-center mt-[50%]">
-      <div className="bg-fixed-pic7 h-[55vh] opacity-95 w-full max-lg:w-[110%] ">
+    <div className="text-white flex flex-col items-center justify-center mb-[50%] max-lg:mb-[220%] max-sm:mb-[350%] lg:mb-[80%]">
+      <div className="bg-fixed-pic7 h-[55vh] opacity-95 w-full max-lg:w-[100%] ">
       <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
         <div className="text-white flex flex-col items-center justify-center mt-56 bg-black">
         <div className="text-5xl font-bold mt-16">Main Dish</div>
@@ -24,7 +24,7 @@ export default function MainDish() {
         </div>
 
         {/* menus */}
-        <div className="flex flex-row gap-20 items-center justify-center m-10">
+        <div className="flex flex-row gap-20 items-center justify-center m-10 max-lg:flex-col max-lg:w-[90%] ">
         {/* first menu colunm */}
         <div className="flex flex-col items-start text-white">
           <div className="flex flex-row justify-evenly mt-10 text-2xl">

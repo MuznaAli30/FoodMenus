@@ -21,12 +21,12 @@ useEffect(() => {
 }, []);
   return (
     <>
-      <div className="bg-black items-center max-lg:flex-col justify-center flex relative flex-row ml-0 max-lg:w-[90%] my-44">
-        <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16 h-[55vh] ">
+      <div className="bg-black items-center max-lg:flex-col justify-center flex relative flex-row ml-0 max-lg:w-[100%] my-10 max-lg:my-0">
+        <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] h-[55vh] ">
         <div className="relative">
           <Image
             src={TheStory22}
-            className="absolute top-36 left-96 w-96 h-[50vh] z-10"
+            className="absolute top-36 left-96 w-96 h-[50vh] z-10 max-lg:top-0"
             data-aos="fade-up"
             data-aos-duration="1000"
           />
@@ -36,7 +36,7 @@ useEffect(() => {
           />
         </div>
         </div>
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[90%]">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
@@ -45,7 +45,7 @@ useEffect(() => {
             The Story
           </div>
           <div className="text-cyan-50 flex justify-start">
-            <p className="w-96 max-lg:w-[90%] text-[#cdbba2] mt-5 mb-5">
+            <p className="w-96  text-[#cdbba2] mt-5 mb-5">
               Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
               Aenean quis commodoo ligula eget dolor. Aeneanan massa. Cum socies
               natoque penatibus etapi magnis dis parturients montes, nascetur

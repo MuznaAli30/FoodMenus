@@ -7,7 +7,7 @@ import Footer from '../HeaderFooter/Footer';
 export default function Desert() {
   return (
     <>
-    <div className="text-white flex flex-col items-center justify-center mt-[50%] mb-[50%]">
+    <div className="text-white flex flex-col items-center justify-center mt-[50%] mb-[50%] max-lg:mb-[220%] max-sm:mb-[350%] lg:mb-[80%]">
     <div className="bg-fixed-pic8 h-[55vh] opacity-95 w-full max-lg:w-[110%] ">
     <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
       <div className="text-white flex flex-col items-center justify-center mt-56 bg-black">
@@ -25,7 +25,7 @@ export default function Desert() {
       </div>
 
       {/* menus */}
-      <div className="flex flex-row gap-20 items-center justify-center m-10">
+      <div className="flex flex-row gap-20 items-center justify-center m-10 max-lg:flex-col max-lg:w-[90%] ">
       {/* first menu colunm */}
       <div className="flex flex-col items-start text-white">
         <div className="flex flex-row justify-evenly mt-10 text-2xl">
@@ -118,7 +118,7 @@ export default function Desert() {
           <div>$20</div>
         </div>
         <div className="h-[0.2vh] bg-[#DAA760] w-full mt-3 mb-3"></div>
-        <div className="text-gray-400">Salmon / Citrus / Honey / Spice.</div>
+        <div className="text-gray-400 ">Salmon / Citrus / Honey / Spice.</div>
       </div>
     </div>
     </div>

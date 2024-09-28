@@ -9,16 +9,16 @@ export default function BestServices() {
   return (
     <>
       <div className="flex flex-row justify-center max-lg:flex-col items-center mb-56 mt-56">
-        <div className="bg-white flex flex-col  items-center justify-center max-lg:w-[90%] w-[35%] h-[84vh]">
+        <div className="bg-white flex flex-col  items-center justify-center max-lg:w-[90%] max-sm:w-[90%] w-[35%] h-[84vh] max-sm:h-[85vh]">
           <div className="flex text-[#DAA760] flex-row items-center justify-center  m-auto">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl ">THE SERVICES</div>
             <IoRemoveOutline className="text-7xl font-extrabold" />
           </div>
-          <div className="text-6xl font-bold items-center justify-center text-center m-auto -mt-14">
+          <div className="text-6xl max-sm:text-3xl max-sm:mt-1 font-bold items-center justify-center text-center m-auto -mt-14 ">
             Best Services
           </div>
-          <div className="w-96 text-center text-black font-light m-auto -mt-14 max-lg:mt-5">
+          <div className="w-96 max-sm:w-[90%] text-center text-black font-light m-auto -mt-14 max-lg:mt-5">
             <p className="mb-10">
             Lorem ipsum dolor siit amet, consectetuer adipiscing eu. Aenean
             quesi comodo liigula egett dolor. Aenean massa. Sociis natoq

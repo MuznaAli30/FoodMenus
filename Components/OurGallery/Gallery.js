@@ -60,7 +60,7 @@ export default function Gallery() {
     <>
       <div className="flex items-center justify-center flex-col my-32">
         {/* Navigation Links */}
-        <div className="text-white flex  flex-row items-center justify-around mb-16 z-30 gap-10">
+        <div className="text-white flex  flex-row items-center justify-around mb-16 z-30 gap-10 max-lg:gap-5">
           {["ALL", "FOOD", "THE RESTAURANT", "DRINK"].map((category) => (
             <button
               key={category}

@@ -39,7 +39,7 @@ export default function Ingredients() {
           </div>
         </div>
         <div className="relative">
-        <div className=" bg-white flex top-48 absolute z-10">
+        <div className=" bg-white flex top-48 absolute z-10 max-lg:items-center max-lg:justify-center max-lg:-ml-52">
         <div className="flex flex-col">
             <div className="flex flex-row ">
             <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1"></div>
@@ -54,7 +54,7 @@ export default function Ingredients() {
         </div>
 
         <div>
-          <Image src={IngredientsPic} className="w-full h-[90vh]"/>
+          <Image src={IngredientsPic} className="w-full h-[90vh] max-lg:mt-4 max-lg:h-[70vh]"/>
         </div>
       </div>
       <Content/>

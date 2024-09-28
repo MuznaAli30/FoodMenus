@@ -9,8 +9,8 @@ export default function SpecialMenu() {
         <div className="bg-fixed-pic4 h-[100vh] opacity-95 w-full max-lg:w-[110%] max-lg:mb-auto   max-lg:mt-10">
           <div className="flex items-center justify-center m-auto h-full">
             {" "}
-            <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
-              <div className="text-white flex flex-col items-center justify-center bg-white">
+            <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto ">
+              <div className="text-white flex flex-col items-center justify-center bg-white max-sm:w-auto">
                 <div className="m-5 flex mb-5 flex-row items-center justify-around">
                   <div className="text-[#DAA760] text-xl font-serif text-center">
                     <IoRemoveOutline className="text-7xl font-extrabold" />

@@ -6,9 +6,9 @@ import Appetizer from '../Menu1/Appetizer';
 export default function SignatureDishes() {
   return (
     <>
-      <div className="text-white flex flex-col items-center justify-center mb-44">
+      <div className="text-white flex flex-col items-center justify-center mb-44 max-lg:mb-[20%] max-sm:mb-[30%]">
         <div className="text-5xl font-bold mt-44">Signature Dish</div>
-        <div className="m-5 flex mb-16 flex-row items-center justify-around">
+        <div className="m-5 flex mb-16 flex-row items-center justify-around ">
           <div className="text-[#DAA760] text-xl font-serif text-center">
             <IoRemoveOutline className="text-7xl font-extrabold" />
           </div>
@@ -21,7 +21,7 @@ export default function SignatureDishes() {
         </div>
 
         {/* menus */}
-        <div className="flex flex-row gap-20 items-center justify-center">
+        <div className="flex flex-row gap-20 items-center justify-center max-lg:flex-col max-lg:w-[90%]">
         {/* first menu colunm */}
         <div className="flex flex-col items-start text-white">
           <div className="text-[#DAA760] text-3xl mb-5">APPETIZER</div>

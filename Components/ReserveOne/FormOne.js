@@ -7,14 +7,14 @@ import FormOnePic from "../../public/Assets/Images/FormOne.webp";
 export default function FormOne() {
   return (
     <>
-      <div className="flex items-center justify-center flex-row gap-56 mt-16">
+      <div className="flex items-center justify-center flex-row gap-56 mt-16 max-lg:flex-col max-lg:w-[90%]">
         <div className="flex flex-col items-center justify-start">
-          <div className="text-[#DAA760] mr-40 flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+          <div className="text-[#DAA760] mr-40 flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify">
             <div className="flex flex-row items-center justify-start">
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl">YOUR DETAILS</div>
             </div>
-            <div className="text-white text-5xl font-bold font-mono flex items-center">
+            <div className="text-white text-5xl font-bold font-mono flex items-center max-lg:justify-center max-lg:w-[90%] max-lg:text-2xl">
               Reserve A Table
             </div>
           </div>
@@ -22,7 +22,7 @@ export default function FormOne() {
           {/* all input fields with button */}
           <div className="mt-5 ">
             {/* first 2 input fields in row */}
-            <div className="flex flex-row items-center justify-center gap-5">
+            <div className="flex flex-row max-lg:flex-col items-center justify-center gap-5 max-lg:w-[90%]">
               <div className="flex flex-col">
                 <label className="text-white text-lg mb-3">
                   NAME <span className="text-[#DAA760]">*</span>
@@ -58,7 +58,7 @@ export default function FormOne() {
             </div>
 
             {/* 4th and 5th input fields in row */}
-            <div className="flex flex-row gap-5 items-center justify-center mt-5">
+            <div className="flex flex-row gap-5 items-center justify-center mt-5 max-lg:flex-col">
               <div className="flex flex-col w-full">
                 <label className="text-white text-lg mb-3">
                   DATE <span className="text-[#DAA760]">*</span>

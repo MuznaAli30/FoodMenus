@@ -18,8 +18,8 @@ export default function OurCommitment() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className="flex flex-col font-mono">
+        <div className="flex items-center justify-center ">
+          <div className="flex flex-col font-mono max-lg:w-[90%]">
             <div className="font-serif text-xl mb-5 text-cyan-50"> OUR COMMITMENT</div>
             <div className="w-96 text-[#cdbba2]">
               We are committed to providing the best and serving wholeheartedly
@@ -31,7 +31,7 @@ export default function OurCommitment() {
               restaurant so that you come home feeling happy and satisfied
               because you have coming from our restaurant. Hopefully you will
               feel satisfaction from our restaurant services.</div>
-            <Image src={OurCommitment2} />
+            <Image src={OurCommitment2} className="max-lg:w-[90%]"/>
 
             </div>
 

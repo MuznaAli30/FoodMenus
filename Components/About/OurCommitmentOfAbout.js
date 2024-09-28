@@ -8,7 +8,7 @@ import OurCommitment2 from "../../public/Assets/Images/OurCommitment2.webp";
 export default function OurCommitmentOfAbout() {
   return (
     <>
-      <div className=" text-white flex flex-row items-center gap-24 justify-center my-44">
+      <div className=" text-white flex flex-row items-center gap-24 justify-center my-44 max-lg:flex-col">
         <div className="w-[45%]">
           <Image src={OurCommitment1} />
           <div className="font-mono mt-5 text-[#cdbba2]">

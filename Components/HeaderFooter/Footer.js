@@ -88,7 +88,7 @@ export default function page() {
       <div className="flex justify-center items-center text-5xl mt-44 mb-16 text-white font-medium">SOVY</div>
       <div className="flex justify-around items-center ">
         
-        <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center">
+        <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center max-lg:flex-col">
           <div className="cursor-pointer hover:text-[#bec7cc] hover:duration-700">FACEBOOK</div>
           <div className="cursor-pointer hover:text-[#bec7cc] hover:duration-700">TWITTER</div>
           <div className="cursor-pointer hover:text-[#bec7cc] hover:duration-700">INSTAGRAM</div>
