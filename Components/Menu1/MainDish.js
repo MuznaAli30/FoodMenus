@@ -6,8 +6,8 @@ import Desert from '../Menu1/Desert';
 export default function MainDish() {
   return (
     <>
-    <div className="text-white flex flex-col items-center justify-center mb-[50%] max-sm:overflow-x-hidden max-sm:w-[90%]">
-      <div className="bg-fixed-pic7 h-[55vh] opacity-95 w-full max-lg:w-[90%] ">
+    <div className="text-white flex flex-col items-center justify-center mb-[50%]  max-sm:overflow-x-hidden max-sm:w-[90%]">
+      <div className="bg-fixed-pic7 h-[55vh] opacity-95 w-full  max-sm:mt-0">
       <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
         <div className="text-white flex flex-col items-center justify-center mt-56 bg-black">
         <div className="text-5xl font-bold mt-16">Main Dish</div>
@@ -27,7 +27,7 @@ export default function MainDish() {
         <div className="flex flex-row gap-20 items-center justify-center m-10 max-lg:flex-col max-sm:w-[90%] ">
         {/* first menu colunm */}
         <div className="flex flex-col items-start text-white max-sm:w-full">
-          <div className="flex flex-row justify-between mt-10 text-2xl">
+          <div className="flex flex-row justify-between mt-10 text-2xl gap-32 max-sm:gap-0">
 
             
             <div className="">Pork Tenderloin Marinated In Yogurt</div>
@@ -77,7 +77,7 @@ export default function MainDish() {
         <div className="flex flex-col items-start text-white max-sm:w-full">
 
 
-          <div className="flex flex-row justify-between mt-10 text-2xl">
+          <div className="flex flex-row justify-between mt-10 text-2xl gap-32 max-sm:gap-0">
             <div>Pork Tenderloin Marinated In Yogurt</div>
             <div>$25</div>
           </div>

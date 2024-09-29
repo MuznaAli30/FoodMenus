@@ -27,7 +27,7 @@ export default function SignatureDishes() {
           {/* first menu colunm */}
           <div className="flex flex-col items-start text-white max-sm:w-full">
             <div className="text-[#DAA760] text-3xl mb-5">APPETIZER</div>
-            <div className="flex flex-row justify-between mt-10 text-2xl">
+            <div className="flex flex-row justify-between mt-10 text-2xl gap-32 max-sm:gap-0">
               <div className="">Pork Tenderloin Marinated In Yogurt</div>
               <div>$25</div>
             </div>
@@ -62,9 +62,9 @@ export default function SignatureDishes() {
           </div>
 
           {/* second menu column */}
-          <div className="flex flex-col items-start text-white max-sm:w-full">
+          <div className="flex flex-col items-start text-white max-sm:w-full ">
             <div className="text-[#DAA760] text-3xl mb-5">MAIN DISH</div>
-            <div className="flex flex-row justify-evenly mt-10 text-2xl">
+            <div className="flex flex-row justify-evenly mt-10 text-2xl gap-32 max-sm:gap-0">
               <div className="">Pork Tenderloin Marinated In Yogurt</div>
               <div>$25</div>
             </div>

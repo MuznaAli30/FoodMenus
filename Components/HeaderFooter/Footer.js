@@ -3,8 +3,8 @@ import { LuClock9 } from "react-icons/lu";
 
 export default function page() {
   return (
-    <div className="bg-black p-16 bottom-0">
-      <div className="flex justify-around items-center max-lg:flex-col max-lg:items-start ">
+    <div className="bg-black mt-10 bottom-0">
+      <div className="flex justify-around items-center max-lg:flex-col max-lg:items-start max-sm:items-center max-sm:justify-center">
         <div class="flex items-center gap-5 m-2 cursor-pointer ">
           <svg
             className="text-[#d08829] text-4xl "
@@ -104,7 +104,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center max-md:text-sm mt-10 text-lg max-sm:text-center max-sm:ml-16 max-md:text-center text-[#d9c59d] mb-5">
+      <div className="flex justify-center items-center max-md:text-sm mt-10 text-lg max-sm:text-center max-md:text-center text-[#d9c59d] mb-5">
         @ 2020 Sovy Restaurant by Jegtheme. All Right Reserved
       </div>
     </div>

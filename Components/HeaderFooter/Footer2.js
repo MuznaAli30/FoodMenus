@@ -23,7 +23,7 @@ export default function Footer2() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center max-md:text-sm mt-10 text-lg max-sm:text-center max-sm:ml-16 max-md:text-center text-[#d9c59d] mb-5">
+      <div className="flex justify-center items-center max-md:text-sm mt-10 text-lg max-sm:text-center  max-md:text-center text-[#d9c59d] mb-5">
         @ 2020 Sovy Restaurant by Jegtheme. All Right Reserved
       </div>
     </div>

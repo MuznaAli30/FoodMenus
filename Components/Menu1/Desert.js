@@ -28,7 +28,7 @@ export default function Desert() {
       <div className="flex flex-row gap-20 items-center justify-center m-10 max-lg:flex-col max-sm:w-[90%]  ">
       {/* first menu colunm */}
       <div className="flex flex-col items-start text-white max-sm:w-full">
-        <div className="flex flex-row justify-between mt-10 text-2xl">
+        <div className="flex flex-row justify-between mt-10 text-2xl gap-32 max-sm:gap-0">
 
           
           <div className="">Pork Tenderloin Marinated In Yogurt</div>
@@ -78,7 +78,7 @@ export default function Desert() {
       <div className="flex flex-col items-start text-white max-sm:w-full">
 
 
-        <div className="flex flex-row justify-evenly mt-10 text-2xl">
+        <div className="flex flex-row justify-evenly mt-10 text-2xl gap-32 max-sm:gap-0">
           <div>Pork Tenderloin Marinated In Yogurt</div>
           <div>$25</div>
         </div>
