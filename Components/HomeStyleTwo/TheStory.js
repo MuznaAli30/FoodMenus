@@ -12,30 +12,30 @@ import TheStory22 from '../../public/Assets/Images/TheStory22.webp'
 export default function TheStory() {
   return (
     <>
-      <div className="flex justify-around items-center gap-10 mt-96">
+      <div className="flex justify-around items-center gap-10 mt-96 max-sm:overflow-x-hidden">
         <div className="flex flex-row mt-96  max-lg:flex-col max-lg:items-center max-lg:justify-center gap-10">
-          <div className="mt-56 ">
+          <div className="mt-56 max-sm:w-[90%] ">
             <Image src={TheStory2} />
           </div>
-          <div className="mt-56 max-lg:mt-10">
+          <div className="mt-56 max-lg:mt-10 max-sm:w-[90%]">
             <Image src={TheStory22} />
           </div>
 
           {/* white box */}
           <div>
-            <div className="bg-white  mt-56 max-lg:mt-10 relative max-lg:right-0 top-[10%] right-[12%] w-96 h-[55vh] shadow-2xl mb-5 text-black flex flex-col ">
+            <div className="bg-white max-sm:w-[99%]  mt-56 max-lg:mt-10 relative max-lg:right-0 top-[10%] right-[12%] w-96 h-[55vh] shadow-2xl mb-5 text-black flex flex-col ">
               <div className="m-5 flex flex-row items-center justify-center">
                 <div className="text-[#DAA760] text-xl font-serif text-center">
                   <IoRemoveOutline className="text-7xl font-extrabold" />
                 </div>
-                <div className=" text-[#DAA760] text-xl font-serif text-center">
+                <div className=" text-[#DAA760] text-xl max-sm:text-base font-serif text-center">
                   THIS WEEK
                 </div>
                 <div className="text-[#DAA760] text-xl font-serif text-center">
                   <IoRemoveOutline className="text-7xl font-extrabold" />
                 </div>
               </div>
-              <div className="text-6xl font-bold items-center justify-center text-center">
+              <div className="text-6xl max-sm:text-5xl font-bold items-center justify-center text-center">
                 The Story
               </div>
               <div className="w-72  m-auto text-center text-black font-light">

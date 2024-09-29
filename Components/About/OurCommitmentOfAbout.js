@@ -8,8 +8,8 @@ import OurCommitment2 from "../../public/Assets/Images/OurCommitment2.webp";
 export default function OurCommitmentOfAbout() {
   return (
     <>
-      <div className=" text-white flex flex-row items-center gap-24 justify-center my-44 max-lg:flex-col">
-        <div className="w-[45%]">
+      <div className=" text-white flex flex-row items-center gap-24 justify-center my-44 max-lg:flex-col max-sm:justify-center  max-sm:overflow-x-hidden">
+        <div className="w-[45%] max-sm:w-[90%]">
           <Image src={OurCommitment1} />
           <div className="font-mono mt-5 text-[#cdbba2]">
             We provide valuable experiences that you will never forget with your
@@ -18,13 +18,13 @@ export default function OurCommitmentOfAbout() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center max-sm:w-[90%]">
           <div className="flex flex-col font-mono">
             <div className="font-serif text-xl mb-5 text-cyan-50">
               {" "}
               OUR COMMITMENT
             </div>
-            <div className="w-96 text-[#cdbba2]">
+            <div className="w-96 text-[#cdbba2] max-sm:w-[90%]">
               We are committed to providing the best and serving wholeheartedly
               to customers. We will provide the best service from waiters to
               chefs who work with us. A typical dish with great Indonesian taste

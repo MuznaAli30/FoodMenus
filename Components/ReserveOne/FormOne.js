@@ -7,11 +7,11 @@ import FormOnePic from "../../public/Assets/Images/FormOne.webp";
 export default function FormOne() {
   return (
     <>
-      <div className="flex items-center justify-center flex-row gap-56 mt-16 max-lg:flex-col max-lg:w-[90%]">
-        <div className="flex flex-col items-center justify-start">
-          <div className="text-[#DAA760] mr-40 flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify">
-            <div className="flex flex-row items-center justify-start">
-              <IoRemoveOutline className="text-7xl font-extrabold" />
+      <div className="flex items-center justify-center flex-row gap-56 mt-16 max-lg:flex-col max-lg:w-[90%] max-sm:overflow-x-hidden max-sm:w-[90%]">
+        <div className="flex flex-col items-center justify-start max-sm:items-center max-sm:justify-center">
+          <div className="text-[#DAA760] mr-40 max-sm:mr-0 max-sm:w-full flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-sm:items-center max-sm:justify-center">
+            <div className="flex flex-row items-center justify-start max-sm:items-center max-sm:justify-center max-sm:w-[90%] ">
+              <IoRemoveOutline className="text-7xl font-extrabold " />
               <div className="text-xl">YOUR DETAILS</div>
             </div>
             <div className="text-white text-5xl font-bold font-mono flex items-center max-lg:justify-center max-lg:w-[90%] max-lg:text-2xl">
@@ -20,10 +20,10 @@ export default function FormOne() {
           </div>
 
           {/* all input fields with button */}
-          <div className="mt-5 ">
+          <div className="mt-5 max-sm:w-[90%]">
             {/* first 2 input fields in row */}
-            <div className="flex flex-row max-lg:flex-col items-center justify-center gap-5 max-lg:w-[90%]">
-              <div className="flex flex-col">
+            <div className="flex flex-row max-lg:flex-col items-center justify-center gap-5 max-sm:w-full">
+              <div className="flex flex-col max-sm:w-[90%]">
                 <label className="text-white text-lg mb-3">
                   NAME <span className="text-[#DAA760]">*</span>
                 </label>
@@ -33,7 +33,7 @@ export default function FormOne() {
                   className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col max-sm:w-[90%]">
                 <label className="text-white text-lg mb-3">
                   EMAIL ADDRESS <span className="text-[#DAA760]">*</span>
                 </label>
@@ -111,7 +111,7 @@ export default function FormOne() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-sm:w-[90%]">
           <Image src={FormOnePic} alt="Form Visual" />
         </div>
       </div>

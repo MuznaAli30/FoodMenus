@@ -10,9 +10,9 @@ import FoodCatering from '../Services/FoodCatering'
 export default function Counters() {
   return (
     <>
-      <div className="flex flex-row max-lg:flex-col items-center justify-center w-full gap-16 mb-44">
+      <div className="flex flex-row max-lg:flex-col max-sm:w-[98%] items-center justify-center w-full gap-16 mb-44">
         <div className="flex items-center">
-          <GiForkKnifeSpoon className="text-[#DAA760] text-8xl mr-5" />
+          <GiForkKnifeSpoon className="text-[#DAA760] text-8xl mr-5 max-sm:text-6xl" />
           <div>
             <div className="text-5xl text-white font-sans">50</div>
             <div className="text-2xl font-light text-[#cdbba2]">
@@ -21,7 +21,7 @@ export default function Counters() {
           </div>
         </div>
         <div className="flex items-center">
-          <FaClockRotateLeft className="text-[#DAA760] font-extralight text-8xl mr-5" />
+          <FaClockRotateLeft className="text-[#DAA760] font-extralight text-8xl mr-5 max-sm:text-6xl" />
           <div className="">
             <div className="text-5xl text-white font-sans">100</div>
             <div className="text-2xl font-light text-[#cdbba2]">
@@ -30,7 +30,7 @@ export default function Counters() {
           </div>
         </div>
         <div className="flex items-center">
-          <SlPeople className="text-[#DAA760] text-8xl mr-5" />
+          <SlPeople className="text-[#DAA760] text-8xl mr-5 max-sm:text-6xl" />
           <div className="">
             <div className="text-5xl text-white font-sans">100</div>
             <div className="text-2xl font-light text-[#cdbba2]">
@@ -39,7 +39,7 @@ export default function Counters() {
           </div>
         </div>
         <div className="flex items-center">
-          <SiHomeassistantcommunitystore className="text-[#DAA760] text-8xl mr-5" />
+          <SiHomeassistantcommunitystore className="text-[#DAA760] text-8xl mr-5 max-sm:text-6xl" />
           <div className="">
             <div className="text-5xl text-white font-sans">100</div>
             <div className="text-2xl font-light text-[#cdbba2]">

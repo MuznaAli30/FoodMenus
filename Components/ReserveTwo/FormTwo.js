@@ -13,11 +13,11 @@ export default function FormTwo() {
             <div className="text-xl ">YOUR DETAILS</div>
             <IoRemoveOutline className="text-7xl font-extrabold" />
           </div>
-          <div className="text-white text-6xl max-lg:text-4xl font-bold font-mono mb-7 flex items-center justify-start">
+          <div className="text-white text-6xl max-sm:text-2xl max-sm:items-center max-sm:justify-center max-lg:text-4xl font-bold font-mono mb-7 flex items-center justify-start">
             Reserve A Table
           </div>
         </div>
-        <div className="text-[#cdbba2] w-[40%] text-center mb-10">
+        <div className="text-[#cdbba2] w-[40%] text-center mb-10 max-sm:w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </div>

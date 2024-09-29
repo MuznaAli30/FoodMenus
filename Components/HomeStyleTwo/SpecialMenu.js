@@ -6,11 +6,11 @@ export default function SpecialMenu() {
   return (
     <>
       <div>
-        <div className="bg-fixed-pic4 h-[100vh] opacity-95 w-full max-lg:w-[110%] max-lg:mb-auto   max-lg:mt-10">
+        <div className="bg-fixed-pic4 h-[100vh] opacity-95 w-full max-lg:w-[100%] max-lg:mb-auto max-sm:w-[90%] max-lg:mt-10 max-sm:overflow-x-hidden">
           <div className="flex items-center justify-center m-auto h-full">
             {" "}
-            <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto ">
-              <div className="text-white flex flex-col items-center justify-center bg-white max-sm:w-auto">
+            <div className=" flex  items-center justify-center max-lg:flex-col max-lg:mt-auto ">
+              <div className="text-white flex flex-col items-center justify-center bg-white max-sm:w-[85%]">
                 <div className="m-5 flex mb-5 flex-row items-center justify-around">
                   <div className="text-[#DAA760] text-xl font-serif text-center">
                     <IoRemoveOutline className="text-7xl font-extrabold" />
@@ -22,16 +22,16 @@ export default function SpecialMenu() {
                     <IoRemoveOutline className="text-7xl font-extrabold" />
                   </div>
                 </div>
-                <div className="text-5xl text-black font-bold ">
+                <div className="text-5xl text-black font-bold  max-sm:text-3xl">
                   Special menus
                 </div>
 
                 {/* menus */}
-                <div className="flex flex-row max-lg:flex-col gap-20 items-center justify-center m-10">
+                <div className="flex flex-row max-lg:flex-col gap-20 items-center justify-center m-10 max-sm:w-[80%]">
                   {/* first menu colunm */}
-                  <div className="flex flex-col items-start text-black">
-                    <div className="flex flex-row justify-evenly mt-10 text-xl">
-                      <div className="mr-56">
+                  <div className="flex flex-col items-start text-black max-sm:w-[80%]">
+                    <div className="flex flex-row justify-between mt-10 text-xl">
+                      <div className="">
                         Pork Tenderloin Marinated In Yogurt
                       </div>
                       <div>$25</div>
@@ -73,9 +73,9 @@ export default function SpecialMenu() {
                   </div>
 
                   {/* second menu column */}
-                  <div className="flex flex-col items-start text-black">
-                    <div className="flex flex-row justify-evenly mt-10 text-xl">
-                      <div className="mr-56">
+                  <div className="flex flex-col items-start text-black max-sm:w-[80%]">
+                    <div className="flex flex-row justify-between mt-10 text-xl">
+                      <div className="">
                         Pork Tenderloin Marinated In Yogurt
                       </div>
                       <div>$25</div>

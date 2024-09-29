@@ -4,9 +4,9 @@ import { IoRemoveOutline } from "react-icons/io5";
 export default function page() {
   return (
     <>
-      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-[100%]">
+      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-lg:w-[100%] max-sm:overflow-x-hidden">
         <div className=" flex  items-center justify-around flex-row max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
-          <div className="flex relative flex-col max-lg:mt-20 mt-24 ">
+          <div className="flex relative flex-col max-lg:mt-20 mt-24 max-sm:mt-0">
             <div className="flex text-[#DAA760] flex-row items-center justify-start ">
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl ">RESERVE</div>
@@ -26,7 +26,6 @@ export default function page() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

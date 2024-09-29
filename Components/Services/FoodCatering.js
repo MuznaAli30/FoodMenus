@@ -12,16 +12,16 @@ export default function page() {
     <>
       <div className="flex flex-row max-lg:flex-col items-center justify-evenly w-full max-lg:w-[90%]  my-44">
         <div>
-          <div className="text-[#DAA760] flex flex-col justify-start max-lg:mt-0 max-lg:text-justify">
+          <div className="text-[#DAA760] flex flex-col justify-start max-lg:mt-0 max-lg:text-justify max-sm:mt-0">
             <div className="flex flex-row  items-center justify-start ">
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl">CELEBRATION</div>
             </div>
-            <div className="text-white text-5xl font-bold font-mono flex items-center">
+            <div className="text-white text-5xl font-bold font-mono flex items-center max-sm:text-4xl">
               Food Catering
             </div>
-            <div className="text-cyan-50 flex justify-start">
-              <p className="w-96 max-lg:w-[95%] text-[#cdbba2] mt-5 mb-5">
+            <div className="text-cyan-50 flex justify-start max-sm:items-center max-sm:justify-center">
+              <p className="w-96 max-lg:w-[95%] max-sm:w-[90%] text-[#cdbba2] mt-5 mb-5">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing qeun elit.
                 Aenean que commodo ligula eget dolor. Aenean massa. Cumm sociis
                 natoque penatibus qet magnis diis parturient montes, nascetur

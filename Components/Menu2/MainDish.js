@@ -19,7 +19,7 @@ export default function MainDish() {
   }, []);
   return (
     <>
-      <div className="flex flex-row items-center justify-around  my-32 max-lg:flex-col max-lg:w-[90%]">
+      <div className="flex flex-row items-center justify-around  my-32 max-lg:flex-col max-lg:w-[90%] ">
       <div className="relative">
           <Image
             src={Menu2MainDish2}
@@ -38,7 +38,7 @@ export default function MainDish() {
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">SAVORY</div>
           </div>
-          <div className="text-white text-5xl font-bold font-sans flex items-center">
+          <div className="text-white text-5xl font-bold font-sans flex items-center max-sm:mt-8">
             Mani Dish
           </div>
           <div className="text-white flex flex-row justify-between mt-10 text-2xl">

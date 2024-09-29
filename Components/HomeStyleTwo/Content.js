@@ -8,11 +8,11 @@ export default function Content() {
   return (
     <>
     
-      <div className="max-lg:mt-96">
-        <div className="max-lg:mt-96">
-        <div className=" flex items-center justify-center flex-col max-lg:mt-96 max-md:mt-96 max-sm:mt-[110%]">
+      <div className=" max-sm:overflow-x-hidden max-sm:w-[90%]">
+        <div className="">
+        <div className=" flex items-center justify-center flex-col ">
           <svg
-            className="m-5 text-7xl max-lg:mt-96 font-extralight text-[#DAA760]"
+            className="m-5 text-7xl  font-extralight text-[#DAA760]"
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"
@@ -34,7 +34,7 @@ export default function Content() {
               </defs>
             </g>
           </svg>
-          <div className="m-5 text-white text-3xl font-serif w-[50%] text-center italic max-lg:text-center max-lg:w-[90%] ">
+          <div className="m-5 text-white max-sm:text-xl text-3xl font-serif w-[50%] text-center italic max-lg:text-center max-lg:w-[90%] ">
             The discovery of a new dish does more for the happiness of mankind
             than the discovery of a star.
           </div>

@@ -28,7 +28,7 @@ export default function Page() {
   }, [imgs.length]);
 
   return (
-    <div className="w-full">
+    <div className="w-full max-sm:overflow-x-hidden">
       img as background
       <div
         className={`absolute inset-0 transition-opacity duration-1000 ${

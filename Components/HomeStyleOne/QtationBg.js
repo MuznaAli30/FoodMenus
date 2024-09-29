@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,7 @@ export default function Page() {
     // Initialize AOS
     AOS.init({
       duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Easing effect
+      easing: "ease-in-out", // Easing effect
     });
 
     // Change the name every 3 seconds
@@ -37,7 +37,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="bg-fixed-pic2 h-[55vh] opacity-95 w-full max-lg:w-full">
+      <div className="bg-fixed-pic2 h-[55vh] opacity-95 max-sm:overflow-x-hidden">
         <div className="flex items-center justify-around relative flex-col">
           {/* SVG Icon with AOS */}
           <svg
@@ -67,7 +67,7 @@ export default function Page() {
 
           {/* Quote Text */}
           <div
-            className="m-5 text-white text-3xl font-serif w-[50%] text-center italic max-lg:text-center max-lg:w-[90%]"
+            className="m-5 max-lg:text-lg text-white text-3xl font-serif w-[50%] text-center italic max-lg:text-center max-lg:w-[90%]"
             data-aos="fade-left" // AOS effect for text
           >
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -84,12 +84,7 @@ export default function Page() {
           </div>
 
           {/* HR appears after 3 seconds */}
-          {showHR && (
-            <hr
-              className=""
-              data-aos="fade-left"
-            />
-          )}
+          {showHR && <hr className="" data-aos="fade-left" />}
         </div>
       </div>
     </>

@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Header from '../HeaderFooter/Header';
+import Header from "../HeaderFooter/Header";
 import { FaPlayCircle } from "react-icons/fa";
-import hero11 from '../../public/Assets/Images/hero11.webp'
-import hero22 from '../../public/Assets/Images/hero22.webp'
-import hero33 from '../../public/Assets/Images/hero33.webp'
-
-
+import hero11 from "../../public/Assets/Images/hero11.webp";
+import hero22 from "../../public/Assets/Images/hero22.webp";
+import hero33 from "../../public/Assets/Images/hero33.webp";
 
 export default function Page() {
   const [isVideoOpen, setIsVideoOpen] = useState(false); // State to track if the video modal is open
@@ -25,26 +23,22 @@ export default function Page() {
       <div className="relative z-[30] bg-black ">
         <Header />
       </div>
-      <div className="max-lg:flex max-lg:flex-row">
+      <div className="max-lg:flex max-lg:flex-row max-sm:overflow-x-hidden">
         <div className="relative bg-black">
           <Image
-            className="w-full h-[100vh] object-cover bg-black  max-sm:w-[100%]"
+            className="max-w-full h-[100vh] object-cover bg-black  max-sm:w-full"
             src={hero33}
             alt="Background"
           />
           <div className="xl:absolute inset-0 flex items-center justify-around mt-[30%] max-xl:mt-[5%]">
             <Image
-              className="object-contain w-[50%] max-lg:w-[50%] max-md:w-full max-sm:w-[70%]"
+              className="object-contain max-w-full"
               src={hero11}
               alt="404 not found"
             />
           </div>
-          <div className="xl:absolute right-0 top-[45%] flex items-center justify-end max-lg:justify-center max-lg:items-center max-2xl:justify-end max-2xl:top-[45%]">
-            <Image
-              className="h-[70vh]"
-              src={hero22}
-              alt="Hero img"
-            />
+          <div className="xl:absolute right-0 max-w-full top-[45%] flex items-center justify-end max-lg:justify-center max-lg:items-center max-2xl:justify-end max-2xl:top-[45%]">
+            <Image className="h-[70vh]" src={hero22} alt="Hero img" />
           </div>
         </div>
         <div className="absolute inset-0 flex items-center justify-around max-lg:flex-col max-lg:mt-10">

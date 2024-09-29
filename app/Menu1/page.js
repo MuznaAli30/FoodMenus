@@ -7,10 +7,11 @@ import Image from "next/image";
 export default function Services() {
   return (
     <>
-      <div>
-        <div className="relative z-[30] bg-black ">
+    <div className="relative z-[30] bg-black ">
           <Header />
         </div>
+      <div className="max-sm:overflow-x-hidden">
+        
         <div className="relative bg-black">
           <Image
             className="w-full h-[70vh] object-cover bg-black opacity-45"

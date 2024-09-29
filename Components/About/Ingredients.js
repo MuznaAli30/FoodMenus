@@ -9,7 +9,7 @@ import IngredientsPic from '../../public/Assets/Images/Ingredients.webp'
 export default function Ingredients() {
   return (
     <>
-      <div className="flex flex-row items-center justify-evenly mb-44 max-lg:flex-col">
+      <div className="flex flex-row items-center justify-evenly mb-44 max-lg:flex-col max-sm:overflow-x-hidden">
         <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[90%]">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />

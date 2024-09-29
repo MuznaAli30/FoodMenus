@@ -13,7 +13,7 @@ import Chef1 from '../../public/Assets/Images/Chef1.webp';
 export default function   page() {
   return (
     <>
-      <div className="bg-black flex justify-center items-center flex-col">
+      <div className="bg-black flex justify-center items-center flex-col max-sm:overflow-x-hidden">
         <div className="flex relative top-10 flex-col max-lg:top-0 max-lg:m-5 ">
           <div className="flex text-[#DAA760] flex-row items-center justify-center">
             <IoRemoveOutline className="text-7xl font-extrabold" />
@@ -21,10 +21,10 @@ export default function   page() {
             <IoRemoveOutline className="text-7xl font-extrabold" />
           </div>
           <div>
-            <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-center">
+            <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-center max-sm:text-2xl">
               Behind the Kitchen
             </div>
-            <div className="text-[#cdbba2] max-lg:w-[90%] flex items-center justify-center text-center">
+            <div className="text-[#cdbba2] max-lg:w-[90%] flex items-center justify-center text-center max-sm:w-full">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget
               <br /> dolor. Aenean massa. Cum sociis natoque penatibus et magnis

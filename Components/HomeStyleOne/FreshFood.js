@@ -4,12 +4,12 @@ import { GiForkKnifeSpoon } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import Link from "next/link.js";
 import Image from "next/image";
-import freshFood from '../../public/Assets/Images/freshFood.webp'
+import freshFood from "../../public/Assets/Images/freshFood.webp";
 
 export default function page() {
   return (
     <>
-      <div className="bg-black flex items-center justify-evenly flex-row max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
+      <div className="bg-black flex items-center justify-evenly flex-row max-lg:flex-col max-sm:w-[90%] max-sm:overflow-x-hidden">
         <div className="flex flex-col justify-around items-center">
           <div className="text-white relative top-80 max-lg:top-8 m-5 w-[90%] mb-96 max-lg:mb-16">
             <Image src={freshFood} className="" />

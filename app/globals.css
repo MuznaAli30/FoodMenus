@@ -5,15 +5,17 @@
 
 body {
   @apply bg-black;
+    margin: 0;
+    padding: 0;
 }
 
 
 
 .bg-fixed-pic1 {
   position: relative; /* Ensure the pseudo-element is positioned correctly */
-  @apply bg-fixed bg-cover bg-center;
+  @apply bg-fixed bg-center; /* Removed bg-cover */
   background-image: url('/Assets/Images/BestFoodQuality.webp');
-  background-size: cover;
+  background-size: fixed; /* Adjust this value to control the size of the image */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -28,6 +30,7 @@ body {
   background: rgba(0, 0, 0, 0.6); /* Black shade with 50% opacity */
   z-index: -1; /* Make sure it's behind the content */
 }
+
 
 .bg-fixed-pic2 {
   position: relative; /* Ensure the pseudo-element is positioned correctly */

@@ -5,8 +5,8 @@ import { IoRemoveOutline } from "react-icons/io5";
 export default function page() {
   return (
     <>
-      <div className="">
-        <div className="bg-black flex items-center justify-around relative flex-col">
+      <div className="max-w-full">
+        <div className="bg-black flex items-center justify-around relative flex-col max-sm:overflow-x-hidden">
           <svg
             className="m-5 text-7xl font-extralight text-[#DAA760]"
             xmlns="http://www.w3.org/2000/svg"

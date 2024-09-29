@@ -21,7 +21,7 @@ useEffect(() => {
 }, []);
   return (
     <>
-      <div className="bg-black items-center max-lg:flex-col justify-center flex relative flex-row ml-0 max-lg:w-[100%] my-10 max-lg:my-0">
+      <div className="bg-black items-center max-lg:flex-col justify-center flex relative flex-row ml-0 max-lg:w-[90%] my-10 max-lg:my-0 max-sm:overflow-x-hidden">
         <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] h-[55vh] ">
         <div className="relative">
           <Image
@@ -36,7 +36,7 @@ useEffect(() => {
           />
         </div>
         </div>
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-sm:justify-center  max-sm:items-center">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
@@ -44,8 +44,8 @@ useEffect(() => {
           <div className="text-white text-5xl font-bold font-mono flex items-center">
             The Story
           </div>
-          <div className="text-cyan-50 flex justify-start">
-            <p className="w-96  text-[#cdbba2] mt-5 mb-5">
+          <div className="text-cyan-50 flex justify-start max-sm:justify-center  max-sm:items-center">
+            <p className="w-96  max-sm:w-[90%] text-[#cdbba2] mt-5 mb-5">
               Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite.
               Aenean quis commodoo ligula eget dolor. Aeneanan massa. Cum socies
               natoque penatibus etapi magnis dis parturients montes, nascetur

@@ -12,14 +12,14 @@ import Footer from '../Components/HeaderFooter/Footer'
 export default function Home() {
   return (
     <div>
-      <HeroPart/>
+      <HeroPart/> 
       <Content/>
       <TheStory/>
-      <SpecialMenu/>
+      <SpecialMenu/> 
       <BestQualityFood/>
       <FreshFood/>
       <QutationBg/>
-      <OurMenu/>
+       <OurMenu/>
       <Reserve1/>
       <Footer/>
     </div>

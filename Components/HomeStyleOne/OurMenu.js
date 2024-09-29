@@ -8,7 +8,7 @@ import OurMenus3 from "../../public/Assets/Images/OurMenus3.webp";
 export default function page() {
   return (
     <>
-      <div className=" flex justify-around items-center flex-col">
+      <div className=" flex justify-around items-center flex-col max-sm:overflow-x-hidden">
         <div className="flex  flex-col max-lg:top-0 max-lg:m-5 ">
           <div className="flex text-[#DAA760] flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />

@@ -8,7 +8,7 @@ import BestServices2 from '../../public/Assets/Images/BestServices2.webp'
 export default function BestServices() {
   return (
     <>
-      <div className="flex flex-row justify-center max-lg:flex-col items-center mb-56 mt-56">
+      <div className="flex flex-row justify-center max-lg:flex-col items-center mb-56 mt-56 max-sm:overflow-x-hidden">
         <div className="bg-white flex flex-col  items-center justify-center max-lg:w-[90%] max-sm:w-[90%] w-[35%] h-[84vh] max-sm:h-[85vh]">
           <div className="flex text-[#DAA760] flex-row items-center justify-center  m-auto">
             <IoRemoveOutline className="text-7xl font-extrabold" />

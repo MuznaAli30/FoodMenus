@@ -1,18 +1,16 @@
 import React from "react";
 import Header from "../../Components/HeaderFooter/Header";
-import AboutOurStory from '../../Components/About/AboutOurStory'
+import AboutOurStory from "../../Components/About/AboutOurStory";
 import Image from "next/image";
-import ReserveHome from '../../public/Assets/Images/ReserveHome.webp'
-
+import ReserveHome from "../../public/Assets/Images/ReserveHome.webp";
 
 export default function Services() {
-
   return (
     <>
-      <div>
-        <div className="relative z-[30] bg-black ">
-          <Header />
-        </div>
+      <div className="relative z-[30] bg-black ">
+        <Header />
+      </div>
+      <div className="max-sm:overflow-x-hidden">
         <div className="relative bg-black">
           <Image
             className="w-full h-[70vh] object-cover bg-black opacity-45"
@@ -28,7 +26,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <AboutOurStory/>
+      <AboutOurStory />
     </>
   );
 }

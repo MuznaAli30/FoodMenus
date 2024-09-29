@@ -8,13 +8,13 @@ import Signature from '../../public/Assets/Images/Signature.webp'
 export default function ChefOfTheDishes() {
   return (
     <>
-      <div className="flex flex-row max-lg:flex-col items-center justify-evenly mt-44">
+      <div className="flex flex-row max-lg:flex-col items-center justify-evenly mt-44 max-sm:overflow-x-hidden">
         <div className="text-[#DAA760] flex flex-col justify-start  max-lg:w-[90%] mt-16 max-lg:mt-0 max-lg:text-justify">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">BEST QUALITY</div>
           </div>
-          <div className="text-white text-5xl font-bold font-sans flex items-center">
+          <div className="text-white text-5xl font-bold font-sans flex items-center max-sm:text-2xl">
             Of the Dishes
           </div>
           <div className="text-cyan-50 flex justify-start">
@@ -26,7 +26,7 @@ export default function ChefOfTheDishes() {
             </p>
           </div>
           <div>
-            <div className="w-80 ">
+            <div className="w-80 max-sm:w-[90%]">
               <Image src={Signature}/>
             </div>
             <div className="text-white font-medium text-2xl">
@@ -37,11 +37,11 @@ export default function ChefOfTheDishes() {
             </button>
           </div>
         </div>
-        <div className="relative  mt-5">
-        <div className=" bg-white flex top-36 absolute max-lg:-right-48 z-10 ">
+        <div className="max-sm:w-[90%] relative  mt-5">
+        <div className=" bg-white flex top-36 absolute max-lg:-right-48 max-sm:-right-16 z-10 ">
         <div className="flex flex-col">
             <div className="flex flex-row ">
-            <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1"></div>
+            <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1 max-sm:m-2 max-sm:mt-9"></div>
           <div className="w-80 font-serif m-8 ml-0 max-lg-w-56  text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
