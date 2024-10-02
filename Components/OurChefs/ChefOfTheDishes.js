@@ -17,8 +17,8 @@ export default function ChefOfTheDishes() {
           <div className="text-white text-5xl font-bold font-sans flex items-center max-sm:text-2xl">
             Of the Dishes
           </div>
-          <div className="text-cyan-50 flex justify-start">
-            <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
+          <div className="text-cyan-50 flex justify-start ">
+            <p className="w-96  text-[#cdbba2] mt-5 mb-5 max-sm:w-[95%]">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               quem commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               et mus penatibus et magnis dis parturient montes, nascetur
@@ -38,11 +38,11 @@ export default function ChefOfTheDishes() {
           </div>
         </div>
         <div className="max-sm:w-[90%] relative  mt-5">
-        <div className=" bg-white flex top-36 absolute max-lg:-right-48 max-sm:-right-16 z-10 ">
+        <div className=" bg-white flex top-36 absolute max-lg:-right-48  z-10 max-sm:right-0 ">
         <div className="flex flex-col">
             <div className="flex flex-row ">
-            <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1 max-sm:m-2 max-sm:mt-9"></div>
-          <div className="w-80 font-serif m-8 ml-0 max-lg-w-56  text-gray-800">
+            <div className="bg-[#DAA760] h-[8vh] m-8 mr-5  w-1 "></div>
+          <div className="w-80 font-serif m-8 ml-0 max-sm:w-[85%]  text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </div>

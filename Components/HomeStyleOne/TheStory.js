@@ -15,7 +15,7 @@ export default function TheStory() {
 
   return (
     <>
-      <div className="bg-black items-center justify-evenly flex relative flex-row ml-0 max-lg:flex-col max-lg:m-2 max-w-full max-sm:overflow-x-hidden">
+      <div className="bg-black max-sm:w-[90%] items-center justify-evenly flex relative flex-row ml-0 max-lg:flex-col max-lg:m-2 max-w-full max-sm:overflow-x-hidden">
         <div className="flex justify-start right-96 relative opacity-90 max-lg:mb-10 max-xl:w-[80%] max-xl:mx-16">
           <div className="relative">
             <Image

@@ -11,10 +11,10 @@ export default function page() {
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl ">RESERVE</div>
             </div>
-            <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-start">
+            <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-start max-sm:text-xl">
               Reserve A Table
             </div>
-            <div className="text-[#cdbba2] w-[50%] max-lg:w-[90%] ">
+            <div className="text-[#cdbba2] w-[50%] max-sm:w-[90%] ">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa.
             </div>

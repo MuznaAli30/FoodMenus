@@ -53,7 +53,7 @@ export default function TheStory() {
 
           {/* White box */}
           <div>
-            <div className="bg-white max-sm:w-[99%] mt-56 max-lg:mt-10 relative max-lg:right-0 top-[10%] right-[12%] w-96 h-[55vh] shadow-2xl mb-5 text-black flex flex-col">
+            <div className="bg-white max-sm:w-full mt-56 max-lg:mt-10 relative max-lg:right-0 top-[10%] right-[12%] w-96 h-[55vh] shadow-2xl mb-5 text-black flex flex-col">
               <div className="m-5 flex flex-row items-center justify-center">
                 <div className="text-[#DAA760] text-xl font-serif text-center">
                   <IoRemoveOutline className="text-7xl font-extrabold" />

@@ -58,7 +58,7 @@ export default function Header() {
     },
     {
       name: "MENUS",
-      href: "/menus", // Updated link
+      href: "", // Updated link
       key: "menus",
       dropdownItems: [
         { name: "Menu-Style-1", href: "/Menu1" }, // Updated link
@@ -67,7 +67,7 @@ export default function Header() {
     },
     {
       name: "PAGES",
-      href: "/pages", // Updated link
+      href: "", // Updated link
       key: "pages",
       dropdownItems: [
         { name: "Contact Us", href: "/ContactUs" }, // Updated link

@@ -15,8 +15,8 @@ export default function Appetizer() {
   }, []);
   return (
     <>
-      <div className="flex flex-row items-center justify-around mt-44 max-lg:flex-col max-lg:w-[90%]">
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+      <div className="flex flex-row items-center justify-around mt-44 max-lg:flex-col max-sm:w-full">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-sm:w-[90%]">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">STARTER</div>
@@ -71,7 +71,7 @@ export default function Appetizer() {
           </div>
           <div className="text-[#DAA760]">Shrimp / Cheese / Tomato</div>{" "}
         </div>
-        <div className="relative">
+        <div className="relative max-sm:w-[90%]">
           <Image
             src={Menu2Appetizer2}
             className="absolute top-96 right-60 z-10 max-lg:right-0"

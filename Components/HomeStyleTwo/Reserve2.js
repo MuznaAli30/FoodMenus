@@ -5,7 +5,7 @@ import Footer from '../HeaderFooter/Footer'
 export default function Reserve2() {
   return (
     <>
-      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-sm:w-[90%] max-sm:overflow-x-hidden">
+      <div className="bg-fixed-pic3 h-[55vh] opacity-95 w-full max-sm:w-full max-sm:overflow-x-hidden">
         <div className=" flex  items-center justify-center flex-col max-lg:flex-col max-lg:m-auto max-sm:w-[90%]">
           <div className="flex relative flex-col max-lg:mt-20 mt-24 ">
             <div className="flex text-[#DAA760] flex-row items-center justify-center ">
@@ -13,7 +13,7 @@ export default function Reserve2() {
               <div className="text-xl ">BOOK NOW</div>
               <IoRemoveOutline className="text-7xl font-extrabold" />
             </div>
-            <div className="text-white text-8xl max-sm:font-normal max-sm:text-3xl font-bold font-sans mb-7 flex items-center justify-start">
+            <div className="text-white text-8xl max-sm:text-2xl font-bold font-sans mb-7 flex items-center justify-start ">
               Reserve A Table Now
             </div>
             

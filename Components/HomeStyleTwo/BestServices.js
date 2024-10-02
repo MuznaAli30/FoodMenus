@@ -51,7 +51,7 @@ export default function BestServices() {
               </div>
           </div>
         </div>
-        <Image src={BestServices2}/>
+        <Image src={BestServices2} className="max-sm:w-[90%]"/>
       </div>
 
       <Reserve2 />

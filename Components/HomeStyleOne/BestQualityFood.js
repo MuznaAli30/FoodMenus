@@ -7,7 +7,7 @@ export default function Page() {
     <>
       <div className="bg-fixed-pic1 h-[55vh] opacity-95 max-sm:overflow-x-hidden">
         <div className="flex flex-col justify-center items-center h-full font-serif">
-          <p className="text-white font-extrabold text-5xl max-sm:text-5xl">
+          <p className="text-white font-extrabold text-8xl max-sm:text-4xl">
             Best Quality Foods
           </p>
           <div>

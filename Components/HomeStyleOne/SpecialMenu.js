@@ -1,96 +1,75 @@
-"use client"
-import React, { useState, useEffect } from "react";
+"use client";
+import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
-import { GiForkKnifeSpoon } from "react-icons/gi";
-import { SiHomeassistantcommunitystore } from "react-icons/si";
-import Link from "next/link.js";
 import Image from "next/image";
-import CountUp from "react-countup"; // Import CountUp
-import freshFood from '../../public/Assets/Images/freshFood.webp'
+import SpecialMenu1 from "../../public/Assets/Images/SpecialMenu1.webp";
+import SpecialMenu2 from "../../public/Assets/Images/SpecialMenu2.webp";
+import SpecialMenu3 from "../../public/Assets/Images/SpecialMenu3.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-export default function FreshFood() {
-  const [startCounter, setStartCounter] = useState(false);
-
-  // Function to check if the user has scrolled to the counter section
-  const handleScroll = () => {
-    const counterSection = document.querySelector("#counter-section");
-    const position = counterSection.getBoundingClientRect();
-    if (position.top < window.innerHeight && position.bottom >= 0) {
-      setStartCounter(true);
-    }
-  };
-
-  // Add scroll event listener
+export default function SpecialMenu() {
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    AOS.init();
   }, []);
-
   return (
     <>
-      <div className="bg-black flex items-center justify-evenly flex-row max-lg:flex-col max-sm:w-[90%] max-sm:overflow-x-hidden">
-        <div className="flex flex-col justify-around items-center">
-          <div className="text-white relative top-80 max-lg:top-8 m-5 w-[90%] mb-96 max-lg:mb-16">
-            <Image src={freshFood} alt="Fresh Food" />
-          </div>
-        </div>
-        <div className="flex relative top-80 max-lg:top-0 flex-col">
-          <div className="flex text-[#DAA760] flex-row items-center justify-start">
+      <div className="text-white flex flex-row items-center justify-evenly max-sm:w-[90%] max-lg:flex-col mx-auto overflow-hidden mt-24 mb-24">
+        <div className="flex flex-col items-start text-white">
+          <div className="flex flex-row items-center justify-start text-[#DAA760]">
             <IoRemoveOutline className="text-7xl font-extrabold" />
-            <div className="text-xl ">SERVICES</div>
+            <div className="text-xl">THIS WEEK</div>
           </div>
-          <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-start">
-            Fresh Foods
+          <div className="text-white text-5xl max-lg:text-2xl font-bold font-mono flex items-center">
+            Specials Menu
           </div>
-          <div className="flex justify-start">
-            <p className="w-96 max-lg:w-[100%] text-[#cdbba2] mt-5 mb-5">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              Aenean quis commodo ligula eget dolor. Aenean massa. Cum sociis
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-              pretium quis, sem.
-            </p>
-          </div>
-          <div id="counter-section" className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col">
-            <div className="flex items-center">
-              <GiForkKnifeSpoon className="text-[#DAA760] text-5xl mr-2" />
-              <div>
-                <div className="text-3xl text-white font-semibold">
-                  {/* Counter for 50 */}
-                  {startCounter && (
-                    <CountUp start={0} end={50} duration={2} />
-                  )}
-                </div>
-                <div className="text-xl font-light text-[#cdbba2]">
-                  Food Variant
-                </div>
-              </div>
+          {/* list */}
+          <div className="flex flex-row justify-between mt-10 text-2xl w-full">
+            <div className="mr-5">
+              Citrus Cured Salmon​ With Honey{" "}
+              <span className="text-[#DAA760] mx-3 max-lg:hidden">..................</span>
             </div>
-            <div className="flex items-center">
-              <SiHomeassistantcommunitystore className="text-[#DAA760] text-5xl mr-2" />
-              <div>
-                <div className="text-3xl text-white font-semibold">
-                  {/* Counter for 100 */}
-                  {startCounter && (
-                    <CountUp start={0} end={100} duration={2} />
-                  )}
-                </div>
-                <div className="text-xl font-light text-[#cdbba2]">
-                  Person Capacity
-                </div>
-              </div>
+            <div>$20</div>
+          </div>
+          <div className="text-[#DAA760]">Salmon / Citrus / Honey / Spice.</div>
+          <div className="flex flex-row justify-between w-full mt-10 text-2xl">
+            <div>Pork Tenderloin In Yogurt<span className="text-[#DAA760] mx-3 max-lg:hidden">..................</span></div>
+            <div>$25</div>
+          </div>
+          <div className="text-[#DAA760]">Pork / Tenderloin / Yogurt</div>
+          <div className="flex flex-row justify-between w-full mt-10 text-2xl">
+            <div>Grilled Pork With Lemons <span className="text-[#DAA760] mx-3 max-lg:hidden">..................</span></div>
+            <div>$27</div>
+          </div>
+          <div className="text-[#DAA760]">Pork / Lemon / Onions</div>
+          <div className="flex flex-row justify-between w-full mt-10 text-2xl">
+            <div>Roasted Prawns with Coriander <span className="text-[#DAA760] mx-3 max-lg:hidden">..................</span></div>
+            <div>$18</div>
+          </div>
+          <div className="text-[#DAA760]">Prawn / Coriander / Spices</div>
+          <div className="flex flex-row justify-between w-full mt-10 text-2xl">
+            <div>Prawn Sausage Cassaoulet <span className="text-[#DAA760] mx-3 max-lg:hidden">..................</span></div>
+            <div>$19</div>
+          </div>
+          <div className="text-[#DAA760]">Prawn / Sausage / Tomato</div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-5 max-lg:w-[95%] max-sm:mt-5 max-sm:mb-5">
+          <div>
+            <Image src={SpecialMenu1}
+            data-aos="fade-left"
+            data-aos-duration="1000"/>
+          </div>
+          <div className="flex flex-row items-center justify-center gap-5">
+            <div>
+              <Image src={SpecialMenu2}
+              data-aos="fade-left"
+              data-aos-duration="1000" />
             </div>
-            <div className="text-[#cdbba2] mb-96 max-lg:mb-16">
-              {" "}
-              Your attendance is important to us,{" "}
-              <span>
-                <Link
-                  href={""}
-                  className="underline text-[#DAA760] hover:text-[#e3dbd0]"
-                >
-                  RESERVE NOW.
-                </Link>
-              </span>
+            <div>
+              <Image src={SpecialMenu3} 
+              data-aos="fade-left"
+              data-aos-duration="1000"/>
             </div>
           </div>
         </div>

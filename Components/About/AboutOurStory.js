@@ -61,20 +61,20 @@ export default function Page() {
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
           </div>
-          <div id="counter-section" className="flex flex-row items-center mb-5 gap-5">
-            <div className="flex flex-col">
+          <div id="counter-section" className="flex flex-row items-center mb-5 gap-5 max-sm:w-[90%]">
+            <div className="flex flex-col ">
               <div className="text-white text-3xl font-sans">
                 {startCounter && <CountUp start={0} end={25} duration={2} />} {/* Counter for Year Experience */}
               </div>
               <div className="text-[#cdbba2] font-light">Year Experience</div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <div className="text-white text-3xl font-sans">
                 {startCounter && <CountUp start={0} end={15} duration={2} />} {/* Counter for Expert Chefs */}
               </div>
               <div className="text-[#cdbba2] font-light">Expert Chefs</div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <div className="text-white text-3xl font-sans">
                 {startCounter && <CountUp start={0} end={19} duration={2} />} {/* Counter for Happy Customers */}
               </div>

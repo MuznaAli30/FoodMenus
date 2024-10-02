@@ -13,7 +13,7 @@ export default function Reserve2Contact() {
               <div className="text-xl ">BOOK NOW</div>
               <IoRemoveOutline className="text-7xl font-extrabold" />
             </div>
-            <div className="text-white text-8xl max-lg:text-4xl font-bold font-sans mb-7 flex items-center justify-start">
+            <div className="text-white text-8xl max-sm:text-2xl font-bold  font-sans mb-7 flex items-center justify-start ">
               Reserve A Table Now
             </div>
             

@@ -8,7 +8,7 @@ export default function Content() {
   return (
     <>
     
-      <div className=" max-sm:overflow-x-hidden max-sm:w-[90%]">
+      <div className=" max-sm:overflow-x-hidden max-sm:w-full">
         <div className="">
         <div className=" flex items-center justify-center flex-col ">
           <svg

@@ -129,8 +129,8 @@ export default function Form() {
         <div className="text-white text-5xl font-medium">YOUR DETAIL</div>
         <div className="my-10 mt-3 text-[#cdbba2]">Let us know how to get back to you.</div>
           <div className="flex flex-row items-center justify-center gap-5 max-lg:flex-col">
-            <div className="flex flex-col ">
-              <label className="text-white text-lg mb-3">
+            <div className="flex flex-col max-sm:w-full">
+              <label className="text-white text-lg mb-3 ">
                 NAME <span className="text-[#DAA760]">*</span>
               </label>
               <input
@@ -139,7 +139,7 @@ export default function Form() {
                 className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col max-sm:w-full">
               <label className="text-white text-lg mb-3">
                 EMAIL ADDRESS <span className="text-[#DAA760]">*</span>
               </label>

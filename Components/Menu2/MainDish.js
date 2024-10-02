@@ -19,8 +19,8 @@ export default function MainDish() {
   }, []);
   return (
     <>
-      <div className="flex flex-row items-center justify-around  my-32 max-lg:flex-col max-lg:w-[90%] ">
-      <div className="relative">
+      <div className="flex flex-row items-center justify-around  my-32 max-lg:flex-col max-sm:w-full ">
+      <div className="relative max-sm:w-[90%] max-sm:mb-9">
           <Image
             src={Menu2MainDish2}
             className="absolute top-96 left-60 z-10 max-lg:left-0"
@@ -33,7 +33,7 @@ export default function MainDish() {
             data-aos-duration="1000"
           />
         </div>
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-lg:w-[100%]">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-sm:w-[90%]">
           <div className="flex flex-row items-center justify-start">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">SAVORY</div>
@@ -41,7 +41,7 @@ export default function MainDish() {
           <div className="text-white text-5xl font-bold font-sans flex items-center max-sm:mt-8">
             Mani Dish
           </div>
-          <div className="text-white flex flex-row justify-between mt-10 text-2xl">
+          <div className="text-white flex flex-row justify-between mt-10 text-2xl ">
             <div>Citrus Cured Salmon​ With Honey </div>
             <div className="text-[#DAA760] max-lg:hidden">
               ..............................................
