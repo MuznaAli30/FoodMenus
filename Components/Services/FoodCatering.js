@@ -17,7 +17,7 @@ export default function page() {
               <IoRemoveOutline className="text-7xl font-extrabold" />
               <div className="text-xl">CELEBRATION</div>
             </div>
-            <div className="text-white text-5xl font-bold font-mono flex items-center max-sm:text-4xl max-sm:items-center max-sm:justify-center">
+            <div className="text-white text-5xl font-bold font-mono flex items-center max-sm:text-4xl max-sm:ml-3">
               Food Catering
             </div>
             <div className="text-cyan-50 flex justify-start max-sm:items-center max-sm:justify-center">

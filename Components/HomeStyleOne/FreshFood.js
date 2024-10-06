@@ -39,7 +39,7 @@ export default function FreshFood() {
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl ">SERVICES</div>
           </div>
-          <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-start max-sm:items-center max-sm:justify-center">
+          <div className="text-white text-5xl font-bold font-sans mb-7 flex items-center justify-start max-sm:ml-3" >
             Fresh Foods
           </div>
           <div className="flex justify-start max-sm:items-center max-sm:justify-center">
@@ -51,8 +51,8 @@ export default function FreshFood() {
               pretium quis, sem.
             </p>
           </div>
-          <div id="counter-section" className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col max-sm:items-center max-sm:justify-center">
-            <div className="flex items-center">
+          <div id="counter-section" className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col max-sm:ml-3">
+            <div className="flex items-center ">
               <GiForkKnifeSpoon className="text-[#DAA760] text-5xl mr-2" />
               <div>
                 <div className="text-3xl text-white font-semibold">

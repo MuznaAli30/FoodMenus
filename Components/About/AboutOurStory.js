@@ -81,9 +81,9 @@ export default function Page() {
               <div className="text-[#cdbba2] font-light">Happy Customers</div>
             </div>
           </div>
-          <div className="text-white text-xl mb-2">SPECIALITIES</div>
+          <div className="text-white text-xl mb-2 max-sm:mr-32">SPECIALITIES</div>
 
-          <div className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col">
+          <div className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col max-sm:mr-24">
             <div className="flex items-center">
               <FaCircleCheck className="text-[#DAA760] mr-2" />
               Fine Dining

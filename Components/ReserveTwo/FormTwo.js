@@ -24,7 +24,7 @@ export default function FormTwo() {
 
         {/* input fields in a row with a btn */}
         <div className="flex flex-row max-lg:flex-col items-center justify-between w-[60%] gap-10 text-white">
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full max-sm:w-full">
             <label className="text-white text-lg mb-3">
               DATE <span className="text-[#DAA760]">*</span>
             </label>
@@ -33,7 +33,7 @@ export default function FormTwo() {
               className="p-5  bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
             />
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full max-sm:w-full">
             <label className="text-white text-lg mb-3">
               TIME <span className="text-[#DAA760]">*</span>
             </label>

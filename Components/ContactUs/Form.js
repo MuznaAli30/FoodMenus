@@ -126,7 +126,7 @@ export default function Form() {
           </div>
         </div>
         <div className="flex flex-col max-lg:w-[90%]">
-        <div className="text-white text-5xl font-medium">YOUR DETAIL</div>
+        <div className="text-white text-5xl max-sm:text-4xl font-medium">YOUR DETAIL</div>
         <div className="my-10 mt-3 text-[#cdbba2]">Let us know how to get back to you.</div>
           <div className="flex flex-row items-center justify-center gap-5 max-lg:flex-col">
             <div className="flex flex-col max-sm:w-full">

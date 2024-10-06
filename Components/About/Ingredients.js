@@ -15,7 +15,7 @@ export default function Ingredients() {
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
           </div>
-          <div className="text-white text-5xl font-bold font-sans flex items-center">
+          <div className="text-white text-5xl max-sm:text-4xl font-bold font-sans flex items-center">
           The Ingredients
           </div>
           <div className="text-cyan-50 flex justify-start">
@@ -27,7 +27,7 @@ export default function Ingredients() {
             </p>
           </div>
           <div>
-            <div className="w-80">
+            <div className="w-80 max-sm:w-[90%]">
               <Image src={Signature}/>
             </div>
             <div className="text-white font-medium text-2xl">

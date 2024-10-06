@@ -74,19 +74,18 @@ export default function Header() {
         { name: "Reservation-Style 1", href: "/ReserveOne" }, // Updated link
         { name: "Reservation-Style 2", href: "/ReserveTwo" }, // Updated link
         { name: "Our Chef", href: "/OurChefs" }, // Updated link
-        { name: "Gallery", href: "OurGallery"},
+        { name: "Gallery", href: "OurGallery" },
         { name: "Services", href: "Services" }, // Updated link
         { name: "404 Page", href: "PageNotFound" }, // Updated link
       ],
     },
   ];
-  
 
   return (
     <>
       <div className="bg-[transparent] flex absolute w-full">
         <div className="bg-transparent text-white font-mono w-full flex justify-around items-center p-5 max-lg:hidden ">
-          <div className="text-3xl font-semibold">SOVY</div>
+          <div className="text-3xl font-bold">SOVY</div>
 
           <div className="flex space-x-5 relative ">
             {/* Home Dropdown */}
@@ -190,23 +189,41 @@ export default function Header() {
                 }
                 ${hoveredDropdown === "pages" ? "block" : "hidden"}`}
               >
-                <Link href="/ContactUs" className="px-4 py-2 hover:text-[#c8934d] block ">
+                <Link
+                  href="/ContactUs"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Contact Us
                 </Link>
-                <Link href="/ReserveOne" className="px-4 py-2 hover:text-[#c8934d] block ">
+                <Link
+                  href="/ReserveOne"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Reservation-Style-1
                 </Link>
-                <Link href="/ReserveTwo" className="px-4 py-2 hover:text-[#c8934d] block ">
+                <Link
+                  href="/ReserveTwo"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Reservation-Style-2
                 </Link>
-                <Link href="/OurChefs" className="px-4 py-2 hover:text-[#c8934d] block ">
+                <Link
+                  href="/OurChefs"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Our Chef
                 </Link>
-                
-                <Link href="/OurGallery" className="px-4 py-2 hover:text-[#c8934d] block ">
+
+                <Link
+                  href="/OurGallery"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Gallery
                 </Link>
-                <Link href="/Services" className="px-4 py-2 hover:text-[#c8934d] block ">
+                <Link
+                  href="/Services"
+                  className="px-4 py-2 hover:text-[#c8934d] block "
+                >
                   Services
                 </Link>
                 <Link
@@ -246,14 +263,30 @@ export default function Header() {
         </div>
 
         {/* Sidebar */}
+
+        {/* side bar bg */}
+
+        <div
+          className={`bg-[#312D2B]  text-white fixed h-screen transition-all z-10 opacity-80
+          ${
+            isOpen ? "w-[45%] max-sm:w-full delay:500 duration-500" : "w-0  overflow-hidden delay-700 duration-500"
+          }`}
+        >
+        </div>
+
+        {/* actual sidebar */}
         <div
           className={`bg-[#130F0C]  text-white fixed h-screen transition-all z-10 
-          ${isOpen ? "w-[45%] max-sm:w-[75%] delay-1000" : "w-0 delay-1000 overflow-hidden"}`}
+          ${
+            isOpen
+              ? "w-[45%] max-sm:w-[75%] duration-500  delay-700"
+              : "w-0  overflow-hidden duration-500"
+          }`}
         >
           <div className="h-full flex flex-col">
             {/* Header */}
-            <div className="bg-transparent text-white w-full flex justify-between font-semibold text-left p-3">
-              <div className="ml-4 text-3xl">SOVY</div>
+            <div className="bg-transparent text-white w-full flex justify-between items-center font-bold text-left p-3">
+              <div className="mt-1 text-3xl">SOVY</div>
 
               {/* Cross Icon for closing the sidebar */}
               <div

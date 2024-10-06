@@ -32,7 +32,7 @@ export default function Counters() {
         id="counter-section"
         className="flex flex-row max-lg:flex-col max-sm:w-[98%] items-center justify-center w-full gap-16 mb-44"
       >
-        <div className="flex items-center">
+        <div className="flex items-center max-sm:mr-16">
           <GiForkKnifeSpoon className="text-[#DAA760] text-8xl mr-5 max-sm:text-6xl" />
           <div>
             <div className="text-5xl text-white font-sans">
