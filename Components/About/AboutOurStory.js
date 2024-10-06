@@ -46,12 +46,12 @@ export default function Page() {
             <Image src={AboutOurStory1} className="w-full h-[50vh]" />
           </div>
         </div>
-        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify max-sm:justify-center max-sm:items-center">
-          <div className="flex flex-row items-center justify-start">
+        <div className="text-[#DAA760] flex flex-col justify-start mt-16 max-lg:mt-0 max-lg:text-justify ">
+          <div className="flex flex-row items-center justify-start max-sm:ml-3">
             <IoRemoveOutline className="text-7xl font-extrabold" />
             <div className="text-xl">OUR STORY</div>
           </div>
-          <div className="text-white text-5xl font-bold font-mono flex items-center">
+          <div className="text-white text-5xl font-bold font-mono flex items-center max-sm:ml-3">
             The Story
           </div>
           <div className="text-cyan-50 flex justify-start max-sm:justify-center max-sm:items-center">
@@ -61,7 +61,7 @@ export default function Page() {
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
           </div>
-          <div id="counter-section" className="flex flex-row items-center mb-5 gap-5 max-sm:w-[90%]">
+          <div id="counter-section" className="flex flex-row items-center mb-5 gap-5 max-sm:w-[90%] max-sm:ml-3">
             <div className="flex flex-col ">
               <div className="text-white text-3xl font-sans">
                 {startCounter && <CountUp start={0} end={25} duration={2} />} {/* Counter for Year Experience */}
@@ -81,9 +81,9 @@ export default function Page() {
               <div className="text-[#cdbba2] font-light">Happy Customers</div>
             </div>
           </div>
-          <div className="text-white text-xl mb-2 max-sm:mr-32">SPECIALITIES</div>
+          <div className="text-white text-xl mb-2 max-sm:ml-3">SPECIALITIES</div>
 
-          <div className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col max-sm:mr-24">
+          <div className="text-[#cdbba2] grid grid-cols-2 gap-4 max-lg:flex max-lg:flex-col max-sm:ml-3">
             <div className="flex items-center">
               <FaCircleCheck className="text-[#DAA760] mr-2" />
               Fine Dining

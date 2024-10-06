@@ -250,7 +250,7 @@ export default function Header() {
       <div className="bg-[transparent]  flex max-md:visible 2xl:hidden xl:hidden lg:hidden">
         {/* right dive for logo 'SOVY' */}
         <div className="bg-transparent text-white w-full flex justify-between items-center p-3 absolute">
-          <div className={`text-3xl font-semibold text-left `}>SOVY</div>
+          <div className={`text-3xl font-bold text-left `}>SOVY</div>
 
           {/* left div for side bar button */}
           <div className="flex space-x-5 text-md ">
@@ -267,7 +267,7 @@ export default function Header() {
         {/* side bar bg */}
 
         <div
-          className={`bg-[#312D2B]  text-white fixed h-screen transition-all z-10 opacity-80
+          className={`bg-[#312D2B]  text-white fixed h-screen transition-all z-10 opacity-55
           ${
             isOpen ? "w-[45%] max-sm:w-full delay:500 duration-500" : "w-0  overflow-hidden delay-700 duration-500"
           }`}
