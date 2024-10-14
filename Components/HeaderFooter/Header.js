@@ -61,7 +61,7 @@ export default function Header1() {
       },
     {
       name: "MENU PAGE",
-      href: "/Menu1", // Updated link
+      href: "/Menu2", // Updated link
       key: "menu",
       dropdownItems: [],
     },
@@ -70,7 +70,7 @@ export default function Header1() {
       href: "", // Updated link
       key: "pages",
       dropdownItems: [
-        { name: "Reservation", href: "/ReserveOne" }, 
+        { name: "Reservation", href: "/ReserveTwo" }, 
         { name: "Our Chef", href: "/OurChefs" }, // Updated link
         { name: "Gallery", href: "OurGallery" },
         { name: "Services", href: "Services" }, 
@@ -82,7 +82,7 @@ export default function Header1() {
     <>
       <div className="bg-[transparent] flex absolute w-full">
         <div className="bg-transparent text-white font-mono w-full flex justify-around items-center p-5 max-lg:hidden ">
-          <div className="text-3xl font-bold">DARBAR ONLINE</div>
+          <div className="text-3xl font-bold">FOOD MENUS</div>
 
           <div className="flex space-x-5 relative ">
             {/* Home page */}
@@ -108,7 +108,7 @@ export default function Header1() {
             
               <Link
                 className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
-                href="/Menu1"
+                href="/Menu2"
               >
                 MENU PAGE
                 
@@ -138,7 +138,7 @@ export default function Header1() {
               >
                 
                 <Link
-                  href="/ReserveOne"
+                  href="/ReserveTwo"
                   className="px-4 py-2 hover:text-[#c8934d] block "
                 >
                   Reservation
@@ -182,7 +182,7 @@ export default function Header1() {
       <div className="bg-[transparent]  flex max-md:visible 2xl:hidden xl:hidden lg:hidden">
         {/* right dive for logo 'SOVY' */}
         <div className="bg-transparent text-white w-full flex justify-between items-center p-3 absolute">
-          <div className={`text-3xl font-bold text-left `}>DARBAR ONLINE</div>
+          <div className={`text-3xl font-bold text-left `}>FOOD MENUS</div>
 
           {/* left div for side bar button */}
           <div className="flex space-x-5 text-md ">
@@ -219,7 +219,7 @@ export default function Header1() {
           <div className="h-full flex flex-col">
             {/* Header */}
             <div className="bg-transparent text-white w-full flex justify-between items-center font-bold text-left p-3">
-              <div className="mt-1 text-2xl">DARBAR ONLINE</div>
+              <div className="mt-1 text-2xl">FOOD MENUS</div>
 
               {/* Cross Icon for closing the sidebar */}
               <div

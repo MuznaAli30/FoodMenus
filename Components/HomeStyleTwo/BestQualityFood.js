@@ -1,11 +1,12 @@
 import React from "react";
 import { FaAsterisk } from "react-icons/fa";
 import { IoRemoveOutline } from "react-icons/io5";
+import BestServices from './BestServices'
 
-export default function Page() {
+export default function BestQualityFood() {
   return (
     <>
-      <div className="bg-fixed-pic1 h-[55vh] opacity-95 max-sm:overflow-x-hidden">
+      <div className="bg-fixed-pic5 h-[55vh] opacity-95 w-full max-lg:w-full max-sm:overflow-x-hidden max-sm:w-full">
         <div className="flex flex-col justify-center items-center h-full font-serif">
           <p className="text-white font-extrabold text-8xl max-sm:text-4xl">
             Best Quality Foods
@@ -25,6 +26,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <BestServices/>
     </>
   );
 }

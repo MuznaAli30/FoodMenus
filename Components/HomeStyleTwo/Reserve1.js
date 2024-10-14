@@ -23,7 +23,7 @@ export default function page() {
           <div className="flex items-center mt-24 max-lg:mt-3">
           
             
-            <Link href={"/ReserveOne"}>
+            <Link href={"/ReserveTwo"}>
             <button className="bg-[#DAA760]  mt-5 max-lg:mt-0 max-lg:p-4 text-black w-60 p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               MAKE A RESERVATION
             </button>

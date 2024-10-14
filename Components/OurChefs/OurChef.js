@@ -3,7 +3,7 @@ import { IoRemoveOutline } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Reserve2 from "../HomeStyleTwo/Reserve2";
+import Reserve2 from "../OurChefs/Reserve2";
 import Image from "next/image";
 import Chef3 from '../../public/Assets/Images/Chef3.webp';
 import Chef2 from '../../public/Assets/Images/Chef2.webp';

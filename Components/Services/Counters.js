@@ -4,7 +4,7 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 import { GiForkKnifeSpoon } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { SlPeople } from "react-icons/sl";
-import QtationBg from "../HomeStyleOne/QtationBg";
+import QtationBg from "../HomeStyleTwo/QtationBg";
 import FoodCatering from "../Services/FoodCatering";
 import CountUp from "react-countup"; // Import CountUp
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import { FaCircleCheck } from "react-icons/fa6";
-import Reserve2 from "../HomeStyleTwo/Reserve2";
+import Reserve2 from "../OurChefs/Reserve2";
 import Image from "next/image";
 import FoodCat2 from '../../public/Assets/Images/FoodCat2.webp';
 import FoodCat1 from '../../public/Assets/Images/FoodCat1.webp';

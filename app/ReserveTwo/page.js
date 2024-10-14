@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/HeaderFooter/Header";
-import FormOne from "../../Components/ReserveOne/FormOne";
+import FormTwo from "../../Components/ReserveTwo/FormTwo";
 import Image from "next/image";
 import ReserveHome from "../../public/Assets/Images/ReserveHome.webp";
 
@@ -20,13 +20,13 @@ export default function page() {
         </div>
         <div className="absolute inset-0 flex items-center justify-around  max-lg:mt-10 ">
           <div className="">
-            <div className="text-8xl max-lg:text-5xl max-sm:text-4xl -mt-44 font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
+            <div className="text-8xl max-sm:text-4xl max-lg:text-5xl -mt-44 font-semibold text-[#eddcdc] mb-10 font-sans max-lg:m-5">
               RESERVATION
             </div>
           </div>
         </div>
       </div>
-      <FormOne />
+      <FormTwo />
     </>
   );
 }

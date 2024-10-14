@@ -1,10 +1,11 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
-import Content from '../HomeStyleOne/Content'
+import ContentHome1 from '../HomeStyleTwo/ContentHome1'
 import OurCommitmentOfAbout from '../About/OurCommitmentOfAbout'
 import Image from "next/image";
 import Signature from '../../public/Assets/Images/Signature.webp';
 import IngredientsPic from '../../public/Assets/Images/Ingredients.webp'
+import Link from "next/link";
 
 export default function Ingredients() {
   return (
@@ -33,9 +34,11 @@ export default function Ingredients() {
             <div className="text-white font-medium text-2xl">
               Maynard Peters , CEO
             </div>
+            <Link href={"/ReserveTwo"}>
             <button className="font-mono bg-[#DAA760] mt-5 text-black w-44 p-4 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               RESREVE NOW
             </button>
+            </Link>
           </div>
         </div>
         <div className="relative max-sm:w-[90%]">
@@ -57,7 +60,7 @@ export default function Ingredients() {
           <Image src={IngredientsPic} className="w-full h-[90vh] max-lg:mt-4 max-sm:h-[60vh]"/>
         </div>
       </div>
-      <Content/>
+      <ContentHome1/>
       <OurCommitmentOfAbout/>
     </>
   );

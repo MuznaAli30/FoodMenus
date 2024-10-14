@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Reserve2 from "../../Components/HomeStyleTwo/Reserve2";
+import Reserve2 from '../OurChefs/Reserve2';
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import Image from "next/image";
 import g1 from "../../public/Assets/Images/g1.webp";

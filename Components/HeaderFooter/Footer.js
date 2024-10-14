@@ -86,7 +86,7 @@ export default function page() {
         </div>
       </div>
       <div className="flex justify-center items-center text-5xl mt-44 mb-16 text-white font-medium">
-        SOVY
+        FOOD MENUS
       </div>
       <div className="flex justify-around items-center mb-16">
         <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:items-center max-lg:flex-col">

@@ -1,5 +1,5 @@
 import React from "react";
-import StayCloseWithUs from '../ReserveOne/StayCloseWithUs'
+import StayCloseWithUs from '../ReserveTwo/StayCloseWithUs'
 import OurCommitment2 from '../../public/Assets/Images/OurCommitment2.webp'
 import OurCommitment1 from '../../public/Assets/Images/OurCommitment1.webp'
 import Image from "next/image";

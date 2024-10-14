@@ -1,5 +1,5 @@
 import React from "react";
-import Reserve1 from "../HomeStyleOne/Reserve1";
+import Reserve1 from "../HomeStyleTwo/Reserve1";
 import Footer from "../HeaderFooter/Footer";
 import Image from "next/image";
 import OurCommitment1 from "../../public/Assets/Images/OurCommitment1.webp";

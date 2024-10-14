@@ -33,7 +33,7 @@ export default function ChefOfTheDishes() {
             <div className="text-white font-medium text-2xl">
               Maynard Peters , CEO
             </div>
-            <Link href={"/ReserveOne"}>
+            <Link href={"/ReserveTwo"}>
             <button className="font-mono bg-[#DAA760] mt-5 text-black w-44 p-4 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               RESREVE NOW
             </button>
