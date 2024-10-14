@@ -1,6 +1,7 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Footer from '../HeaderFooter/Footer'
+import Link from "next/link";
 
 export default function StayCloseWithUs() {
   return (
@@ -19,9 +20,11 @@ export default function StayCloseWithUs() {
             
           </div>
           <div className="flex items-center justify-center">
+            <Link href={"/ContactUs"}>
             <button className="bg-[#DAA760] max-lg:m-5  mt-5 text-black w-60 p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               CONTACT US
             </button>
+            </Link>
           </div>
         </div>
       </div>

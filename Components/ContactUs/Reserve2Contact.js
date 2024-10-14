@@ -1,6 +1,7 @@
 import React from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 import Footer2 from '../HeaderFooter/Footer2'
+import Link from "next/link";
 
 export default function Reserve2Contact() {
   return (
@@ -19,9 +20,11 @@ export default function Reserve2Contact() {
             
           </div>
           <div className="flex items-center justify-center">
+          <Link href={"/ReserveOne"}>
             <button className="bg-[#DAA760] max-lg:m-5  mt-5 text-black w-60 p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               MAKE A RESERVATION
             </button>
+            </Link>
           </div>
         </div>
       </div>

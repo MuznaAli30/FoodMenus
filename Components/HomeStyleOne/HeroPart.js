@@ -6,6 +6,7 @@ import { FaPlayCircle } from "react-icons/fa";
 import hero11 from "../../public/Assets/Images/hero11.webp";
 import hero22 from "../../public/Assets/Images/hero22.webp";
 import hero33 from "../../public/Assets/Images/hero33.webp";
+import Link from "next/link";
 
 export default function Page() {
   const [isVideoOpen, setIsVideoOpen] = useState(false); // State to track if the video modal is open
@@ -50,9 +51,11 @@ export default function Page() {
               </span>
               <br /> Dishes
             </div>
+            <Link href={"/ReserveOne"}>
             <button className="bg-[#DAA760] max-lg:m-5 mt-5 text-black w-56 p-4 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               RESERVE NOW
             </button>
+            </Link>
           </div>
           <div className="text-[#eddcdc] w-[20%] max-lg:w-[90%] text-2xl font-serif">
             {/* Play button to trigger video modal */}

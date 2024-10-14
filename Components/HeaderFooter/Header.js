@@ -10,7 +10,7 @@ import { FiBarChart2 } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 import { IoIosArrowDropdown } from "react-icons/io";
 
-export default function Header() {
+export default function Header1() {
   const [hoveredDropdown, setHoveredDropdown] = useState(null);
   const [isOpen, setIsOpen] = useState(false); // State to manage the open/close state of the sidebar
   const [dropdownStates, setDropdownStates] = useState({}); // State to manage which dropdowns are open
@@ -42,13 +42,10 @@ export default function Header() {
   // Sidebar items with dropdown options
   const items = [
     {
-      name: "HOME",
+      name: "HOME PAGE",
       href: "/",
       key: "home",
-      dropdownItems: [
-        { name: "Home-Style-1", href: "/" },
-        { name: "Home-Style-2", href: "/Home2" }, // Updated link
-      ],
+      dropdownItems: [],
     },
     {
       name: "ABOUT US",
@@ -57,26 +54,26 @@ export default function Header() {
       dropdownItems: [],
     },
     {
-      name: "MENUS",
-      href: "", // Updated link
-      key: "menus",
-      dropdownItems: [
-        { name: "Menu-Style-1", href: "/Menu1" }, // Updated link
-        { name: "Menu-Style-2", href: "/Menu2" }, // Updated link
-      ],
+        name: "Contact US",
+        href: "/ContactUs", // Updated link
+        key: "contact",
+        dropdownItems: [],
+      },
+    {
+      name: "MENU PAGE",
+      href: "/Menu1", // Updated link
+      key: "menu",
+      dropdownItems: [],
     },
     {
       name: "PAGES",
       href: "", // Updated link
       key: "pages",
       dropdownItems: [
-        { name: "Contact Us", href: "/ContactUs" }, // Updated link
-        { name: "Reservation-Style 1", href: "/ReserveOne" }, // Updated link
-        { name: "Reservation-Style 2", href: "/ReserveTwo" }, // Updated link
+        { name: "Reservation", href: "/ReserveOne" }, 
         { name: "Our Chef", href: "/OurChefs" }, // Updated link
         { name: "Gallery", href: "OurGallery" },
-        { name: "Services", href: "Services" }, // Updated link
-        { name: "404 Page", href: "PageNotFound" }, // Updated link
+        { name: "Services", href: "Services" }, 
       ],
     },
   ];
@@ -85,88 +82,38 @@ export default function Header() {
     <>
       <div className="bg-[transparent] flex absolute w-full">
         <div className="bg-transparent text-white font-mono w-full flex justify-around items-center p-5 max-lg:hidden ">
-          <div className="text-3xl font-bold">SOVY</div>
+          <div className="text-3xl font-bold">DARBAR ONLINE</div>
 
           <div className="flex space-x-5 relative ">
-            {/* Home Dropdown */}
-            <div
-              className="relative text-md cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("home")}
-              onMouseLeave={handleMouseLeave}
+            {/* Home page */}
+
+            <Link
+              className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
+              href="/"
             >
-              <Link
-                className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
-                href="#"
-              >
-                HOME
-                <SlArrowDown className="m-auto" />
-              </Link>
-              <div
-                className={`absolute right-0 top-12 w-32 rounded-sm bg-[#130F0C] text-white py-4 shadow-md transition-all duration-300 
-                ${
-                  hoveredDropdown === "home"
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-2"
-                }
-                ${hoveredDropdown === "home" ? "block" : "hidden"}`}
-              >
-                <Link
-                  href="/"
-                  className="p-1 text-center hover:text-[#c8934d] block"
-                >
-                  Home-Style-1
-                </Link>
-                <Link
-                  href="/Home2"
-                  className="p-1 text-center hover:text-[#c8934d] block"
-                >
-                  Home-Style-2
-                </Link>
-              </div>
-            </div>
+              HOME PAGE
+            </Link>
 
             {/* About Us Link */}
             <Link className="hover:text-[#c8934d] duration-500" href="/About">
               ABOUT US
             </Link>
 
-            {/* Menus Dropdown */}
-            <div
-              className="relative text-md cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("menus")}
-              onMouseLeave={handleMouseLeave}
-            >
+            {/* contact page */}
+            <Link className="hover:text-[#c8934d] duration-500" href="/ContactUs">
+              CONTACT US
+            </Link>
+
+            {/* Menus page */}
+            
               <Link
                 className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
-                href="#"
+                href="/Menu1"
               >
-                MENUS
-                <SlArrowDown className="m-auto" />
+                MENU PAGE
+                
               </Link>
-              <div
-                className={`absolute right-0 top-12 w-32 rounded-sm bg-[#130F0C] text-white py-4 shadow-md transition-all duration-300 
-                ${
-                  hoveredDropdown === "menus"
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-2"
-                }
-                ${hoveredDropdown === "menus" ? "block" : "hidden"}`}
-              >
-                <Link
-                  href="/Menu1"
-                  className="p-1 text-center hover:text-[#c8934d] block"
-                >
-                  Menu-Style-1
-                </Link>
-                <Link
-                  href="/Menu2"
-                  className="p-1 text-center hover:text-[#c8934d] block"
-                >
-                  Menu-Style-2
-                </Link>
-              </div>
-            </div>
-
+              
             {/* Pages Dropdown */}
             <div
               className="relative text-md cursor-pointer"
@@ -189,24 +136,14 @@ export default function Header() {
                 }
                 ${hoveredDropdown === "pages" ? "block" : "hidden"}`}
               >
-                <Link
-                  href="/ContactUs"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Contact Us
-                </Link>
+                
                 <Link
                   href="/ReserveOne"
                   className="px-4 py-2 hover:text-[#c8934d] block "
                 >
-                  Reservation-Style-1
+                  Reservation
                 </Link>
-                <Link
-                  href="/ReserveTwo"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Reservation-Style-2
-                </Link>
+                
                 <Link
                   href="/OurChefs"
                   className="px-4 py-2 hover:text-[#c8934d] block "
@@ -226,12 +163,7 @@ export default function Header() {
                 >
                   Services
                 </Link>
-                <Link
-                  href="/PageNotFound"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  404 Page
-                </Link>
+                
               </div>
             </div>
           </div>
@@ -250,7 +182,7 @@ export default function Header() {
       <div className="bg-[transparent]  flex max-md:visible 2xl:hidden xl:hidden lg:hidden">
         {/* right dive for logo 'SOVY' */}
         <div className="bg-transparent text-white w-full flex justify-between items-center p-3 absolute">
-          <div className={`text-3xl font-bold text-left `}>SOVY</div>
+          <div className={`text-3xl font-bold text-left `}>DARBAR ONLINE</div>
 
           {/* left div for side bar button */}
           <div className="flex space-x-5 text-md ">
@@ -269,10 +201,11 @@ export default function Header() {
         <div
           className={`bg-[#312D2B]  text-white fixed h-screen transition-all z-10 opacity-55
           ${
-            isOpen ? "w-[45%] max-sm:w-full delay:500 duration-500" : "w-0  overflow-hidden delay-700 duration-500"
+            isOpen
+              ? "w-[45%] max-sm:w-full delay:500 duration-500"
+              : "w-0  overflow-hidden delay-700 duration-500"
           }`}
-        >
-        </div>
+        ></div>
 
         {/* actual sidebar */}
         <div
@@ -286,7 +219,7 @@ export default function Header() {
           <div className="h-full flex flex-col">
             {/* Header */}
             <div className="bg-transparent text-white w-full flex justify-between items-center font-bold text-left p-3">
-              <div className="mt-1 text-3xl">SOVY</div>
+              <div className="mt-1 text-2xl">DARBAR ONLINE</div>
 
               {/* Cross Icon for closing the sidebar */}
               <div

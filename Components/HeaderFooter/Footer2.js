@@ -7,7 +7,7 @@ export default function Footer2() {
       <div className="flex justify-center items-center text-5xl mt-44 mb-16 text-white font-medium">
         SOVY
       </div>
-      <div className="flex justify-around items-center ">
+      <div className="flex justify-around items-center mb-16">
         <div class="flex items-center gap-24 text-md font-medium text-[#d08829] max-lg:gap-10 max-lg:flex-col">
           <div className="cursor-pointer hover:text-[#bec7cc] hover:duration-700">
             FACEBOOK
@@ -23,9 +23,7 @@ export default function Footer2() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center max-md:text-sm mt-10 text-lg max-sm:text-center  max-md:text-center text-[#d9c59d] mb-5">
-        @ 2020 Sovy Restaurant by Jegtheme. All Right Reserved
-      </div>
+     
     </div>
   );
 }
