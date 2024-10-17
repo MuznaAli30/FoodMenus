@@ -129,24 +129,24 @@ export default function Form() {
         <div className="text-white text-5xl max-sm:text-4xl font-medium">YOUR DETAIL</div>
         <div className="my-10 mt-3 text-[#cdbba2]">Let us know how to get back to you.</div>
           <div className="flex flex-row items-center justify-center gap-5 max-lg:flex-col">
-            <div className="flex flex-col max-sm:w-full">
+            <div className="flex flex-col max-sm:w-full w-[95%]">
               <label className="text-white text-lg mb-3 ">
                 NAME <span className="text-[#DAA760]">*</span>
               </label>
               <input
                 type="text"
                 placeholder="John"
-                className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+                className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
               />
             </div>
-            <div className="flex flex-col max-sm:w-full">
+            <div className="flex flex-col max-sm:w-full w-[95%]">
               <label className="text-white text-lg mb-3">
                 EMAIL ADDRESS <span className="text-[#DAA760]">*</span>
               </label>
               <input
                 type="email"
                 placeholder="mail@mail.com"
-                className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+                className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
               />
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function Form() {
             <input
               type="text"
               placeholder="Subject"
-              className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+              className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16"
             />
           </div>
           <div className="flex flex-col">

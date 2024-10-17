@@ -42,9 +42,30 @@ export default function Header1() {
   // Sidebar items with dropdown options
   const items = [
     {
-      name: "HOME PAGE",
+      name: "HOME",
       href: "/",
       key: "home",
+      dropdownItems: [],
+    },
+
+    {
+      name: "MENU",
+      href: "/Menu2", // Updated link
+      key: "menu",
+      dropdownItems: [],
+    },
+
+    {
+      name: "RESERVATION",
+      href: "/ReserveTwo", // Updated link
+      key: "reserve",
+      dropdownItems: [],
+    },
+
+    {
+      name: "CONTACT US",
+      href: "/ContactUs", // Updated link
+      key: "contact",
       dropdownItems: [],
     },
     {
@@ -53,28 +74,25 @@ export default function Header1() {
       key: "about",
       dropdownItems: [],
     },
+
     {
-        name: "Contact US",
-        href: "/ContactUs", // Updated link
-        key: "contact",
-        dropdownItems: [],
-      },
+      name: "OUR CHEF",
+      href: "/OurChefs", // Updated link
+      key: "contact",
+      dropdownItems: [],
+    },
+
     {
-      name: "MENU PAGE",
-      href: "/Menu2", // Updated link
-      key: "menu",
+      name: "GALLERY",
+      href: "/OurGallery", // Updated link
+      key: "contact",
       dropdownItems: [],
     },
     {
-      name: "PAGES",
-      href: "", // Updated link
-      key: "pages",
-      dropdownItems: [
-        { name: "Reservation", href: "/ReserveTwo" }, 
-        { name: "Our Chef", href: "/OurChefs" }, // Updated link
-        { name: "Gallery", href: "OurGallery" },
-        { name: "Services", href: "Services" }, 
-      ],
+      name: "SERVICES",
+      href: "/Services", // Updated link
+      key: "contact",
+      dropdownItems: [],
     },
   ];
 
@@ -82,7 +100,9 @@ export default function Header1() {
     <>
       <div className="bg-[transparent] flex absolute w-full">
         <div className="bg-transparent text-white font-mono w-full flex justify-around items-center p-5 max-lg:hidden ">
-          <div className="text-3xl font-bold">FOOD MENUS</div>
+          <div className="text-3xl font-serif ">
+            <Link href={"/"}>FOODE MENUS</Link>
+          </div>
 
           <div className="flex space-x-5 relative ">
             {/* Home page */}
@@ -91,7 +111,33 @@ export default function Header1() {
               className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
               href="/"
             >
-              HOME PAGE
+              HOME
+            </Link>
+
+            {/* Menus page */}
+
+            <Link
+              className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
+              href="/Menu2"
+            >
+              MENU
+            </Link>
+
+            {/* resevation page  */}
+
+            <Link
+              className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
+              href="/ReserveTwo"
+            >
+              RESERVATION
+            </Link>
+
+            {/* contact page */}
+            <Link
+              className="hover:text-[#c8934d] duration-500"
+              href="/ContactUs"
+            >
+              CONTACT US
             </Link>
 
             {/* About Us Link */}
@@ -99,73 +145,29 @@ export default function Header1() {
               ABOUT US
             </Link>
 
-            {/* contact page */}
-            <Link className="hover:text-[#c8934d] duration-500" href="/ContactUs">
-              CONTACT US
+            {/* our chef Us Link */}
+            <Link
+              className="hover:text-[#c8934d] duration-500"
+              href="/OurChefs"
+            >
+              OUR CHEF
             </Link>
 
-            {/* Menus page */}
-            
-              <Link
-                className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
-                href="/Menu2"
-              >
-                MENU PAGE
-                
-              </Link>
-              
-            {/* Pages Dropdown */}
-            <div
-              className="relative text-md cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("pages")}
-              onMouseLeave={handleMouseLeave}
+            {/* our gallery Us Link */}
+            <Link
+              className="hover:text-[#c8934d] duration-500"
+              href="/OurGallery"
             >
-              <Link
-                className="hover:text-[#c8934d] duration-500 flex items-center gap-2"
-                href="#"
-              >
-                PAGES
-                <SlArrowDown className="m-auto" />
-              </Link>
-              <div
-                className={`absolute left-0 top-12 w-56 text-left rounded-sm bg-[#130F0C] text-white  py-2 shadow-md transition-all duration-300 
-                ${
-                  hoveredDropdown === "pages"
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-2"
-                }
-                ${hoveredDropdown === "pages" ? "block" : "hidden"}`}
-              >
-                
-                <Link
-                  href="/ReserveTwo"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Reservation
-                </Link>
-                
-                <Link
-                  href="/OurChefs"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Our Chef
-                </Link>
+              GALLERY
+            </Link>
 
-                <Link
-                  href="/OurGallery"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Gallery
-                </Link>
-                <Link
-                  href="/Services"
-                  className="px-4 py-2 hover:text-[#c8934d] block "
-                >
-                  Services
-                </Link>
-                
-              </div>
-            </div>
+            {/* our chef Us Link */}
+            <Link
+              className="hover:text-[#c8934d] duration-500"
+              href="/Services"
+            >
+              SERVICES
+            </Link>
           </div>
 
           {/* Social Media Icons */}
@@ -182,7 +184,9 @@ export default function Header1() {
       <div className="bg-[transparent]  flex max-md:visible 2xl:hidden xl:hidden lg:hidden">
         {/* right dive for logo 'SOVY' */}
         <div className="bg-transparent text-white w-full flex justify-between items-center p-3 absolute">
-          <div className={`text-3xl font-bold text-left `}>FOOD MENUS</div>
+          <div className="text-3xl font-serif ">
+            <Link href={"/"}>FOODS MENUS</Link>
+          </div>
 
           {/* left div for side bar button */}
           <div className="flex space-x-5 text-md ">
@@ -218,8 +222,8 @@ export default function Header1() {
         >
           <div className="h-full flex flex-col">
             {/* Header */}
-            <div className="bg-transparent text-white w-full flex justify-between items-center font-bold text-left p-3">
-              <div className="mt-1 text-2xl">FOOD MENUS</div>
+            <div className="bg-transparent text-white w-full flex justify-between items-center text-left p-3">
+              <div className="mt-1 serif text-2xl">FOODS MENUS</div>
 
               {/* Cross Icon for closing the sidebar */}
               <div
@@ -252,29 +256,7 @@ export default function Header1() {
                           {item.name}
                         </Link>
                       </div>
-                      {item.dropdownItems.length > 0 && (
-                        <IoIosArrowDropdown
-                          className={`text-xl transition-transform mr-10${
-                            dropdownStates[item.key] ? "" : ""
-                          }`}
-                        />
-                      )}
                     </div>
-                    {/* Dropdown content */}
-                    {dropdownStates[item.key] &&
-                      item.dropdownItems.length > 0 && (
-                        <div className="mt-2 ml-4">
-                          {item.dropdownItems.map((dropdownItem) => (
-                            <Link
-                              key={dropdownItem.name}
-                              href={dropdownItem.href}
-                              className="block text-white hover:text-[#c8934d] p-3"
-                            >
-                              {dropdownItem.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
                   </div>
                 ))}
               </div>

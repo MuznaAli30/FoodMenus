@@ -30,7 +30,7 @@ export default function FormTwo() {
             </label>
             <input
               type="date"
-              className="p-5  bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+              className="p-5  bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
             />
           </div>
           <div className="flex flex-col w-full max-sm:w-full">
@@ -39,7 +39,7 @@ export default function FormTwo() {
             </label>
             <input
               type="time"
-              className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+              className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
             />
           </div>
           <div className="flex flex-col w-full">
@@ -47,7 +47,7 @@ export default function FormTwo() {
               PERSON <span className="text-[#DAA760]">*</span>
             </label>
             <select
-              className="p-6 cursor-pointer bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760]"
+              className="p-6 cursor-pointer bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
               defaultValue=""
             >
               <option className="p-9" value="1">
@@ -66,7 +66,7 @@ export default function FormTwo() {
           </div>
 
           <div className="w-full">
-            <button className="font-mono  bg-[#DAA760] mt-9 text-black p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
+            <button className="font-mono h-16 w-[95%]  bg-[#DAA760] mt-9 text-black p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
               RESERVATION NOW
             </button>
           </div>
