@@ -23,7 +23,7 @@ export default function FormTwo() {
         </div>
 
         {/* input fields in a row with a btn */}
-        <div className="flex flex-row max-lg:flex-col items-center justify-between w-[60%] gap-10 text-white">
+        <div className="flex flex-row max-lg:flex-col items-center justify-between w-[65%] gap-3 max-xl:w-[79%] text-white">
           <div className="flex flex-col w-full max-sm:w-full">
             <label className="text-white text-lg mb-3">
               DATE <span className="text-[#DAA760]">*</span>
@@ -44,7 +44,7 @@ export default function FormTwo() {
           </div>
           <div className="flex flex-col max-sm:w-[90%] w-full">
                 <label className="text-white text-lg mb-3">
-                NUMBER OF PERSON <span className="text-[#DAA760]">*</span>
+                PERSONS <span className="text-[#DAA760]">*</span>
                 </label>
                 <input
                   type="text"
