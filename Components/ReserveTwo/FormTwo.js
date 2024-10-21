@@ -42,28 +42,16 @@ export default function FormTwo() {
               className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
             />
           </div>
-          <div className="flex flex-col w-full">
-            <label className="text-white font-mono text-lg mb-3">
-              PERSON <span className="text-[#DAA760]">*</span>
-            </label>
-            <select
-              className="p-6 cursor-pointer bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
-              defaultValue=""
-            >
-              <option className="p-9" value="1">
-                1 Person
-              </option>
-              <option className="p-9" value="2">
-                2 Person
-              </option>
-              <option className="p-9" value="3">
-                3 Person
-              </option>
-              <option className="p-9" value="4">
-                4 Person
-              </option>
-            </select>
-          </div>
+          <div className="flex flex-col max-sm:w-[90%] w-full">
+                <label className="text-white text-lg mb-3">
+                NUMBER OF PERSON <span className="text-[#DAA760]">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Persons"
+                  className="p-5 bg-[#1A1C1D] text-white hover:border hover:border-[#DAA760] h-16 w-[95%]"
+                />
+              </div>
 
           <div className="w-full">
             <button className="font-mono h-16 w-[95%]  bg-[#DAA760] mt-9 text-black p-5 hover:bg-[#130F0C] hover:duration-300 hover:text-white hover:border-2 border-opacity-100">
